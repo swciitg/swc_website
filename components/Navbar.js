@@ -14,7 +14,7 @@ export default function Navbar() {
 
           <a
             className="[text-decoration:none] flex flex-row items-center justify-start gap-[1rem] md:mx-0 mx-auto"
-            href="https://swc.iitg.ac.in"
+            href="/"
           >
             <div className="w-[2.5rem] h-[4.5rem] shrink-0 flex flex-col justify-center">
               <img
@@ -33,10 +33,10 @@ export default function Navbar() {
           <div className="rounded-3xl shrink-0 bg-[#1C1C1C] w-[20rem] sm:w-[27rem]  h-[2rem] sm:h-[4rem] md:mx-0 mx-auto overflow-hidden flex flex-row py-[1.5rem] px-[2rem] box-border items-center justify-center text-[1rem] text-[inherit]">
             <div className="flex flex-row items-center justify-center gap-[1.5rem]">
               <div className=" h-[1.25rem] flex flex-col items-center justify-start gap-[0.25rem] text-[inherit]">
-                <Link href='/about'className="relative leading-[1.25rem] text-[#777777] hover:text-white font-semibold">Home</Link>
+                <Link href='/'className="relative leading-[1.25rem] text-[#777777] hover:text-white font-semibold">Home</Link>
                 {/* <div className="relative box-border w-[0.38rem] h-[0.13rem] shrink-0 border-t-[2px] border-solid border-white" /> */}
               </div>
-              <a href='/prducts' className="[text-decoration:none] relative leading-[1.25rem] font-semibold text-[#777777] hover:text-white">
+              <a href='/product' className="[text-decoration:none] relative leading-[1.25rem] font-semibold text-[#777777] hover:text-white">
                 Products
               </a>
               <a href='/team'className="[text-decoration:none] relative leading-[1.25rem] font-semibold  text-[#777777] hover:text-white">
