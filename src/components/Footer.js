@@ -1,10 +1,10 @@
 import Image from 'next/image';
 const Footer = () => {
     return (
-        <div className="flex flex-col bg-specialgrey mb-0">
+        <div className="flex flex-col bg-specialgrey mb-0 mt-12 bottom-0">
             <div className=" flex flex-col lg:flex-row justify-evenly  pt-8">
                 <div className=" flex flex-col  basis-1 lg:basis-1/3">
-                    <div className="font-Inter text-6xl lg:text-5xl xl:text-6xl leading-tight text-center">Get in touch! <p className="hidden lg:inline">&nbsp;</p></div>
+                    <div className="font-Inter pl-8 text-2xl md:text-6xl xl:text-6xl leading-tight md:text-center">Get in touch! <p className="hidden lg:inline">&nbsp;</p></div>
                     <div className="flex justify-around my-4">
                         <div className="flex flex-col">
                             <div className="flex text-greyuse">SWC, New SAC</div>
@@ -41,7 +41,7 @@ const Footer = () => {
                         <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Journeys</div>
                         <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Spardha</div>
                     </div>
-                    <div className="flex flex-col">
+                    {/* <div className="flex flex-col">
                         <div className="flex font-Inter text-lg sm:text-xl font-bold leading-6 tracking-wider mb-3">Teams</div>
                         <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Frontend</div>
                         <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Backend</div>
@@ -49,7 +49,7 @@ const Footer = () => {
                         <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">App</div>
                         <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Growth</div>
                         <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Management</div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="flex justify-center basis-1/3 mt-8 mb-6">

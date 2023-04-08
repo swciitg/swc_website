@@ -1,5 +1,5 @@
 import { Public_Sans } from 'next/font/google';
-import styles from '../src/styles/WhoAreWe.module.css'
+import styles from '../styles/WhoAreWe.module.css'
 import Image from 'next/image';
 const WhoAreWe = () => {
     return ( 
