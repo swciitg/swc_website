@@ -2,10 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter,Cedarville_Cursive} from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import Header from '../../components/Header'
-import Navbar from '../../components/Navbar'
-import Headline from '../../components/Headline'
-
+import Headline from '../components/Headline'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {

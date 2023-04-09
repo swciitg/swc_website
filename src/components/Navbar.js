@@ -5,8 +5,8 @@ const cedar = Cedarville_Cursive({subsets:['latin'], weight:['400']})
 
 export default function Navbar() {
   return (
-
-    <div className="fixed z-40 top-[3rem] w-screen h-[9rem] sm:h-[15rem]  text-left text-[1.25rem] text-white font-Inter bg-black">
+          
+    <div className="fixed z-40 top-[3rem] w-screen h-[9rem] sm:h-[12rem] md:h-[15rem]  text-left text-[1.25rem] text-white font-Inter bg-black">
       <div className=" relative mx-auto mt-[0.5rem] md:mt-[2rem] h-auto flex md:flex-row flex-col justify-between items-top 
       xl:w-[68rem] lg:w-[48rem] md:w-[35rem]">
         
