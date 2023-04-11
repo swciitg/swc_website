@@ -1,0 +1,38 @@
+/* Styles for hover effect */
+
+.developer{
+    background: linear-gradient(#252525, #252525 50%, #32C8AA 50%, #32C8AA);
+    background-size: 100% 200%;
+    /*trasition effect for background*/
+    transition:  1s;
+}
+.developer:hover {
+    background-position: 100% 100%;
+  }
+.product{
+    background: linear-gradient(#252525, #252525 50%, #F64D8C 50%, #F64D8C);
+    background-size: 100% 200%;
+    /*trasition effect for background*/
+    transition:  1s;
+}
+.product:hover {
+    background-position: 100% 100%;
+ }
+ .manager{
+    background: linear-gradient(#252525, #252525 50%, #F6E517 50%, #F6E517);
+    background-size: 100% 200%;
+    /*trasition effect for background*/
+    transition:  1s;
+}
+.manager:hover {
+    background-position: 100% 100%;
+ }
+ .growth{
+    background: linear-gradient(#252525, #252525 50%, #1A50DE 50%, #1A50DE);
+    background-size: 100% 200%;
+    /*trasition effect for background*/
+    transition:  1s;
+}
+.growth:hover {
+    background-position: 100% 100%;
+ }
