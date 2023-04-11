@@ -36,7 +36,7 @@ export default function Navbar() {
                 <Link href='/'className="relative leading-[1.25rem] text-[#777777] hover:text-white font-semibold">Home</Link>
                 {/* <div className="relative box-border w-[0.38rem] h-[0.13rem] shrink-0 border-t-[2px] border-solid border-white" /> */}
               </div>
-              <a href='/product' className="[text-decoration:none] relative leading-[1.25rem] font-semibold text-[#777777] hover:text-white">
+              <a href='/products' className="[text-decoration:none] relative leading-[1.25rem] font-semibold text-[#777777] hover:text-white">
                 Products
               </a>
               <a href='/team'className="[text-decoration:none] relative leading-[1.25rem] font-semibold  text-[#777777] hover:text-white">
