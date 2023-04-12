@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import LandingCard from '../components/LandingCard'
-import Image from 'next/image'
 import { Inter} from 'next/font/google'
 import Headline from '../components/Headline'
 import WhoAreWe from '../components/WhoAreWe'
@@ -8,8 +6,18 @@ import LandingCard from '@/components/LandingCard'
 import SocialTags from '@/components/SocialTags'
 import ExploreBrowseTags from '@/components/ExploreBrowseTags'
 const inter = Inter({ subsets: ['latin'] })
+import { getCardData } from '../../lib/cardData'
 
-export default function Home() {
+export async function getStaticProps() {
+  const cardData = await getCardData()
+
+  return {
+    props: { cardData }
+  }
+}
+
+export default function Home({cardData}) {
+// console.log(cardData)
   return (
     <>
       <Head>
@@ -24,12 +32,24 @@ export default function Home() {
         <div className="w-fit md:w-4/5 lg:w-3/5 flex flex-col md:flex-row justify-center items-center min-h-fit space-y-6 md:space-x-6 md:space-y-0">
           <div className="flex flex-col justify-center items-center self-center w-full space-y-6">
             <SocialTags></SocialTags>
-            <LandingCard></LandingCard>
-            <LandingCard></LandingCard>
+            {cardData.length !== 0 &&
+            cardData.map((d, idx) => {
+              return (
+                idx<2 ?
+                <LandingCard gradBgFrom={d.gradBgFrom} gradBgTo={d.gradBgTo} textBoxBg={d.textBoxBg} imageSrc={d.imageSrc} isDesktop={d.isDesktop} cardTitle={d.cardTitle} cardSubtitle={d.cardSubtitle}/>
+                :""
+                );
+            })}
           </div>
           <div className="flex flex-col justify-center items-center self-center w-full space-y-6">
-            <LandingCard></LandingCard>
-            <LandingCard></LandingCard>
+          {cardData.length !== 0 &&
+            cardData.map((d, idx) => {
+              return (
+                idx>1 ?
+                <LandingCard gradBgFrom={d.gradBgFrom} gradBgTo={d.gradBgTo} textBoxBg={d.textBoxBg} imageSrc={d.imageSrc} isDesktop={d.isDesktop} cardTitle={d.cardTitle} cardSubtitle={d.cardSubtitle}/>
+                :""
+                );
+            })}
             <ExploreBrowseTags></ExploreBrowseTags>
           </div>
         </div>

@@ -1,5 +1,4 @@
-{
-    "landing-cards": [
+[
       {
         "id": 1,
         "gradBgFrom": "gradbluedark",
@@ -41,4 +40,3 @@
         "cardSubtitle": "Launching Soon"
       }
     ]
-  }
