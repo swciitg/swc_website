@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { Inter,Cedarville_Cursive} from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Headline from '../components/Headline'
+import WhoAreWe from '../components/WhoAreWe'
+import Footer from '../components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -15,6 +17,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Headline/>
+     <WhoAreWe></WhoAreWe>
+     <Footer></Footer>
     </>
   )
 }
