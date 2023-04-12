@@ -1,8 +1,12 @@
 import Head from 'next/head'
 import LandingCard from '../components/LandingCard'
+import Image from 'next/image'
 import { Inter} from 'next/font/google'
 import Headline from '../components/Headline'
 import WhoAreWe from '../components/WhoAreWe'
+import LandingCard from '@/components/LandingCard'
+import SocialTags from '@/components/SocialTags'
+import ExploreBrowseTags from '@/components/ExploreBrowseTags'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -15,7 +19,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Headline/>
-      <LandingCard></LandingCard>
+      {/* <LandingCard></LandingCard> */}
+      <div className="flex w-full justify-center items-center my-[5%]">
+        <div className="w-fit md:w-4/5 lg:w-3/5 flex flex-col md:flex-row justify-center items-center min-h-fit space-y-6 md:space-x-6 md:space-y-0">
+          <div className="flex flex-col justify-center items-center self-center w-full space-y-6">
+            <SocialTags></SocialTags>
+            <LandingCard></LandingCard>
+            <LandingCard></LandingCard>
+          </div>
+          <div className="flex flex-col justify-center items-center self-center w-full space-y-6">
+            <LandingCard></LandingCard>
+            <LandingCard></LandingCard>
+            <ExploreBrowseTags></ExploreBrowseTags>
+          </div>
+        </div>
+      </div>
      <WhoAreWe></WhoAreWe>
     </>
   )
