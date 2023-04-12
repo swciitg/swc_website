@@ -1,11 +1,11 @@
 
 import Image from 'next/image';
 
-const LandingCard = (bgDark, bgLight, textBoxBg, imageSrc, isDesktop, cardTitle, cardSubtitle) => {
+const LandingCard = (gradBgFrom, gradBgTo, textBoxBg, imageSrc, isDesktop, cardTitle, cardSubtitle) => {
     return (
         <div className="w-4/5 sm:w-3/4 md:w-full lg:w-full bg-gradient-45 from-gradgreendark to-gradgreenlight rounded-3xl overflow-hidden flex flex-col m-0">
             <div className="mt-[5%] ml-[10%] rounded-tl-3xl shadow-lg shadow-cardimgshadow overflow-hidden">
-            <Image src="/../public/testimgdesktop.png"
+            <Image src="/../public/journeys-screen.png"
                                 width={619}
                                 height={458}
                                 alt="Icon not found" />
