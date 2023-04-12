@@ -1,7 +1,7 @@
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Products() {
+export default function Team() {
   return (
     <>
     <div className='bg-black h-[12rem] w-full'></div> 
