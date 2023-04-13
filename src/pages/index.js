@@ -7,16 +7,21 @@ import SocialTags from '@/components/SocialTags'
 import ExploreBrowseTags from '@/components/ExploreBrowseTags'
 const inter = Inter({ subsets: ['latin'] })
 import { getCardData } from '../../lib/cardData'
+import { getHiringCardData } from '../../lib/HiringCardData'
+import WeAreHiring from '@/components/WeAreHiring'
 
 export async function getStaticProps() {
   const cardData = await getCardData()
+  // Storing data of Hiring Cards from json file
+  const hiringCardData=await getHiringCardData();
 
   return {
-    props: { cardData }
+    props: { cardData,hiringCardData }
   }
 }
 
-export default function Home({cardData}) {
+
+export default function Home({cardData,hiringCardData}) {
 // console.log(cardData)
   return (
     <>
@@ -28,7 +33,7 @@ export default function Home({cardData}) {
       </Head>
       <Headline/>
       {/* <LandingCard></LandingCard> */}
-      <div className="flex w-full justify-center items-center my-[5%]">
+       <div className="flex w-full justify-center items-center my-[5%]">
         <div className="w-fit md:w-4/5 lg:w-3/5 flex flex-col md:flex-row justify-center items-center min-h-fit space-y-6 md:space-x-6 md:space-y-0">
           <div className="flex flex-col justify-center items-center self-center w-full space-y-6">
             <SocialTags></SocialTags>
@@ -54,7 +59,8 @@ export default function Home({cardData}) {
           </div>
         </div>
       </div>
-     <WhoAreWe></WhoAreWe>
+       <WeAreHiring cardData={hiringCardData}></WeAreHiring>
+      <WhoAreWe></WhoAreWe> 
     </>
   )
 }
