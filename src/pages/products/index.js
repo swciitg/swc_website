@@ -3,13 +3,15 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import CardCarousel from '../components/CardCarousel'
+import CarouselSlides from '../components/CarouselSlides'
 
 const inter = Inter({ subsets: ['latin'] })
 export default function Products() {
   return (
     <>
       {/* <Cursor nums={10} startColor ='yellow' endColor='orange'/> */}
-      <CardCarousel></CardCarousel>
+      {/* <CardCarousel></CardCarousel> */}
+      <CarouselSlides></CarouselSlides>
       Products
     </>
   )
