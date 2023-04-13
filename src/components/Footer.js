@@ -35,11 +35,11 @@ const Footer = () => {
                     <div className="flex flex-col">
                         <div className="flex font-Inter text-lg sm:text-xl font-bold leading-6 tracking-wider mb-3">Products</div>
                         <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Placement Portal</div>
-                        <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Spardha</div>
+                        <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Election Portal</div>
                         <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">One Stop</div>
                         <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Vaccination Portal</div>
                         <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Journeys</div>
-                        <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Spardha</div>
+                        <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Shodh</div>
                     </div>
                     {/* <div className="flex flex-col">
                         <div className="flex font-Inter text-lg sm:text-xl font-bold leading-6 tracking-wider mb-3">Teams</div>
@@ -54,37 +54,45 @@ const Footer = () => {
             </div>
             <div className="flex justify-center basis-1/3 mt-8 mb-6">
                 <div className="flex justify-between w-4/5  border-t border-greyuse">
-                    <div className="flex pl-3 pt-4 font-Inter font-normal text-xs leading-4 text-greyuse">@ 2022 Students Web Committee</div>
+                    <div className="flex pl-3 pt-4 font-Inter font-normal text-xs leading-4 text-greyuse">@ 2023 Students Web Committee</div>
                     <div className="flex pt-4">
                         <div className="flex mr-3">
+                            <a href='https://www.facebook.com/swciitg/' target="_blank">
                             <Image src="/../public/Icons/Facebook.png"
                                 width={15}
                                 height={15}
                                 alt="Icon not found" />
+                                </a>
                         </div>
                         <div className="flex mr-3">
+                            <a href='https://www.instagram.com/swc_iitg/' target="_blank">
                             <Image src="/../public/Icons/Instagram.png"
                                 width={15}
                                 height={15}
                                 alt="Icon not found" />
+                                </a>
                         </div>
                         <div className="flex mr-3">
+                            <a href='https://in.linkedin.com/company/student-s-web-committee-iitg' target="_blank">
                             <Image src="/../public/Icons/LinkedIn.png"
                                 width={15}
                                 height={15}
                                 alt="Icon not found" />
+                                </a>
                         </div>
-                        <div className="flex mr-3">
+                        {/* <div className="flex mr-3">
                             <Image src="/../public/Icons/Pinterest.png"
                                 width={15}
                                 height={15}
                                 alt="Icon not found" />
-                        </div>
+                        </div> */}
                         <div className="flex">
+                            <a href='https://twitter.com/swciitghy' target="_blank">
                             <Image src="/../public/Icons/Twitter.png"
                                 width={15}
                                 height={15}
                                 alt="Icon not found" />
+                                </a>
                         </div>
                     </div>
                 </div>
