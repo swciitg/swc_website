@@ -8,7 +8,6 @@ const job2=cardData.find(job2=>job2.id==='2');
 const job3=cardData.find(job3=>job3.id==='3');
 const job4=cardData.find(job4=>job4.id==='4');
 const job5=cardData.find(job5=>job5.id==='5');
-console.log(cardData);
     return (
         <div className="flex flex-col">
             <div className="flex flex-col md:flex-row justify-center items-center mt-8">

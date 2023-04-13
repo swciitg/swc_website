@@ -1,5 +1,5 @@
 import styles from '../styles/WeAreHiring.module.css'
-// Hiring Cards
+// Hiring Card
 export default function HiringCards(props){
     let {id,title,description,eligibility,color}=props;
     return(
