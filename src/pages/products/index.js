@@ -4,15 +4,22 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import CardCarousel from '../components/CardCarousel'
 import CarouselSlides from '../components/CarouselSlides'
+import { getExperienceData } from '../../../lib/ExperienceData';
 
 const inter = Inter({ subsets: ['latin'] })
-export default function Products() {
+
+export async function getStaticProps() {
+  const ExperienceData = await getExperienceData()
+
+  return {
+    props: { ExperienceData }
+  }
+}
+
+export default function Products({ExperienceData}) {
   return (
     <>
-      {/* <Cursor nums={10} startColor ='yellow' endColor='orange'/> */}
-      {/* <CardCarousel></CardCarousel> */}
-      <CarouselSlides></CarouselSlides>
-      Products
+    <CarouselSlides ExperienceData={ExperienceData}></CarouselSlides>
     </>
   )
 }

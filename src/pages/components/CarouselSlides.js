@@ -3,14 +3,16 @@ import { Navigation } from 'swiper';
 import {useRef, useState} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {BsChevronLeft,BsChevronRight} from 'react-icons/bs';
-import { EffectFlip } from 'swiper';
+import { EffectFlip} from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import "swiper/css/effect-flip";
 import CardCarousel from './CardCarousel';
 
-const CarouselSlides = () => {
+
+const CarouselSlides = ({ExperienceData}) => {
+    const cardData = ExperienceData['experiences-card'];
     const [_, setInit] = useState(); // To rerender incase of intitialisation as the Ref for button will be null
 
     const PrevButtonRef = useRef(null);
@@ -22,7 +24,7 @@ const CarouselSlides = () => {
           modules={[Navigation,EffectFlip]}
           effect={"flip"}
           slidesPerView={1}
-          spaceBetween={2}
+          spaceBetween={10}
           loop={true}
           observer={true}
           observeParents={true}
@@ -32,14 +34,20 @@ const CarouselSlides = () => {
           }}
           onInit={()=>setInit(true)}
         >
-          <SwiperSlide className='min-w-max min-h-max'><CardCarousel/></SwiperSlide>
-          <SwiperSlide className='min-w-max min-h-max'><CardCarousel/></SwiperSlide>
-          <SwiperSlide className='min-w-max min-h-max'><CardCarousel/></SwiperSlide>
-          <SwiperSlide className='min-w-max min-h-max'><CardCarousel/></SwiperSlide>
+          
+
+        {cardData.length !== 0 &&
+          cardData.map((cards) => {
+          return (
+          <SwiperSlide className='min-w-max min-h-max'>
+            <CardCarousel ImgSrc={cards.ImgSrc} Title={cards.Title} Designation={cards.Designation} Content={cards.Content}/>
+          </SwiperSlide>
+          );
+        })}
         
         </Swiper>
-        <div className="absolute cursor-pointer z-10 top-[60%] sm:top-[45%] left-0 w-[25px] h-[25px] text-white text-md grid place-items-center" ref={PrevButtonRef}><BsChevronLeft className='stroke-[1px] hover:scale-150 duration-500'/></div>
-        <div className="absolute cursor-pointer z-10 top-[60%] sm:top-[45%] right-0 w-[25px] h-[25px]  text-white text-md grid place-items-center " ref={NextButtonRef}><BsChevronRight className='stroke-[1px] hover:scale-150 duration-500'/></div>
+        <div className="absolute cursor-pointer z-10 top-[50%] sm:top-[45%] left-0 w-[25px] h-[25px] text-white text-md grid place-items-center" ref={PrevButtonRef}><BsChevronLeft className='stroke-[1px] hover:scale-150 duration-500'/></div>
+        <div className="absolute cursor-pointer z-10 top-[50%] sm:top-[45%] right-0 w-[25px] h-[25px]  text-white text-md grid place-items-center " ref={NextButtonRef}><BsChevronRight className='stroke-[1px] hover:scale-150 duration-500'/></div>
     
         </div>
       );

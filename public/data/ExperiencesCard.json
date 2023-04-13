@@ -1,0 +1,124 @@
+{
+    "experiences-card":[
+        {
+            "id":1,
+            "ImgSrc":"./Images/team_photos/kunal.png",
+            "Title":"Kunal Pal",
+            "Designation":"General Secretary",
+            "Content":"Learnt the skill of taking ideas and turning them into awesome products that surpass expectations."
+            
+        },
+        {
+            "id":2,
+            "ImgSrc":"./Images/team_photos/vighnesh.png",
+            "Title":"Vighnesh Deshpande",
+            "Designation":"Overall Coordinator",
+            "Content":"The team culture is amazing here and there's a lot to learn from SWC."
+            
+        },
+        {
+            "id":3,
+            "ImgSrc":"./Images/team_photos/sarthak.png",
+            "Title":"Sarthak Diwan",
+            "Designation":"Webmaster",
+            "Content":"An amazing place to ideate and work upon sleeplessly to deliver products."
+            
+        },
+        {
+            "id":3,
+            "ImgSrc":"./Images/team_photos/yashi.png",
+            "Title":"Yashi Natu",
+            "Designation":"Frontend Lead",
+            "Content":"A great place to work with amazing team culture.and great projects."
+            
+        },
+        {
+            "id":4,
+            "ImgSrc":"./Images/team_photos/arpit.png",
+            "Title":"Arpit Surekha",
+            "Designation":"Backend Lead",
+            "Content":"Feels like working for something bigger and motivates for working harder."
+            
+        },
+        {
+            "id":5,
+            "ImgSrc":"./Images/team_photos/hareesh.png",
+            "Title":"Hareesh Nandigrama",
+            "Designation":"App Lead",
+            "Content":"Rewarding experience at SWC, contributing to the club's mission through innovation."
+            
+        },
+        {
+            "id":6,
+            "ImgSrc":"./Images/team_photos/ayushi.png",
+            "Title":"Ayushi Anand",
+            "Designation":"Design Lead",
+            "Content":"A small journey from Product Designer to Design Lead, learning at each stage."
+            
+        },
+        {
+            "id":6,
+            "ImgSrc":"./Images/team_photos/chinmay.png",
+            "Title":"Chinmay Zinjal",
+            "Designation":"Design System Lead",
+            "Content":"Working at SWC augmented my skills at great extent."
+            
+        },
+        {
+            "id":7,
+            "ImgSrc":"./Images/team_photos/aniruddha.png",
+            "Title":"Aniruddha Patil",
+            "Designation":"PM Lead",
+            "Content":"Successful product development at SWC as a customer-driven product manager."
+            
+        },
+        {
+            "id":8,
+            "ImgSrc":"./Images/team_photos/parshwa.png",
+            "Title":"Parshva Shah",
+            "Designation":"Core Team",
+            "Content":"An Amazing team to work with fun and totally enjoyable."
+            
+        },
+        {
+            "id":9,
+            "ImgSrc":"./Images/team_photos/mohit.png",
+            "Title":"Mohit Manoj",
+            "Designation":"Core Team",
+            "Content":"Amazing Team and amazing experiences, learnt a lot working here at SWC!"
+            
+        },
+        {
+            "id":10,
+            "ImgSrc":"./Images/team_photos/akshat.png",
+            "Title":"Akshat Singhal",
+            "Designation":"Core Team",
+            "Content":"Provided me with the opportunity to work on challenging projects and learn new technologies."
+            
+        },
+        {
+            "id":11,
+            "ImgSrc":"./Images/team_photos/ayush.png",
+            "Title":"Ayush Jaiswal",
+            "Designation":"Core Team",
+            "Content":"Allowed me to leverage my technical skills and build confidence."
+            
+        },
+        {
+            "id":12,
+            "ImgSrc":"./Images/team_photos/jitendra.png",
+            "Title":"Jitendra Kr. Pandey",
+            "Designation":"Core Team",
+            "Content":"Great people with great talents. Loved working in the amazing projects here!"
+            
+        },
+        {
+            "id":13,
+            "ImgSrc":"./Images/team_photos/tarannum.png",
+            "Title":"Tarannum",
+            "Designation":"Core Team",
+            "Content":"Explored and learnt lots of thing. Lovely and supportive team!"
+            
+        }
+    ]
+}
