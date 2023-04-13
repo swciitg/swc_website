@@ -47,7 +47,7 @@ export default function Navbar() {
               </Link>
               <div className=" flex flex-row items-center justify-start text-[0.88rem]">
                 <div className=" bg-[#A523AA] rounded-2xl h-[2rem] flex flex-row py-[0.25rem] px-[0.75rem]  items-center justify-center">
-                  <Link href='/hiring' className=" text-white font-serif text-[0.5rem] sm:text-[0.75rem] text-center lg:text-[1rem]">We Are Hiring!"
+                  <Link href='/hiring' className=" text-white font-serif text-[0.5rem] sm:text-[0.75rem] text-center">We Are Hiring!"
                   </Link> 
               </div>
             </div>
