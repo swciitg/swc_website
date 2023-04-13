@@ -1,0 +1,42 @@
+[
+      {
+        "id": 1,
+        "gradBgFrom": "gradbluedark",
+        "gradBgTo": "gradbluelight",
+        "textBoxbg": "bluebg",
+        "imageSrc": "/../public/one-stop-screen.png",
+        "isDesktop": false,
+        "cardTitle": "One Stop",
+        "cardSubtitle": ""
+      },
+      {
+        "id": 2,
+        "gradBgFrom": "gradcyandark",
+        "gradBgTo": "gradgreylight",
+        "textBoxbg": "darkgreybg",
+        "imageSrc": "/../public/sa-portal-screen.png",
+        "isDesktop": true,
+        "cardTitle": "SA Portal",
+        "cardSubtitle": "Live"
+      },
+      {
+        "id": 3,
+        "gradBgFrom": "gradgreendark",
+        "gradBgTo": "gradgreenlight",
+        "textBoxbg": "darkgreenbg",
+        "imageSrc": "/../public/journeys-screen.png",
+        "isDesktop": true,
+        "cardTitle": "Journeys",
+        "cardSubtitle": "Open Source"
+      },
+      {
+        "id": 4,
+        "gradBgFrom": "graddarkbluedark",
+        "gradBgTo": "gradwhitelight",
+        "textBoxbg": "darkbluebg",
+        "imageSrc": "/../public/course-directory-screen.png",
+        "isDesktop": true,
+        "cardTitle": "Course Directory",
+        "cardSubtitle": "Launching Soon"
+      }
+    ]
