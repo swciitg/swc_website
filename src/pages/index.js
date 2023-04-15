@@ -1,11 +1,23 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-
+import { Inter} from 'next/font/google'
+import Headline from '../components/Headline'
+import WhoAreWe from '../components/WhoAreWe'
+import LandingCard from '@/components/LandingCard'
+import SocialTags from '@/components/SocialTags'
+import ExploreBrowseTags from '@/components/ExploreBrowseTags'
 const inter = Inter({ subsets: ['latin'] })
+import { getCardData } from '../../lib/cardData'
 
-export default function Home() {
+export async function getStaticProps() {
+  const cardData = await getCardData()
+
+  return {
+    props: { cardData }
+  }
+}
+
+export default function Home({cardData}) {
+// console.log(cardData)
   return (
     <>
       <Head>
@@ -14,31 +26,35 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.js</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+      <Headline/>
+      {/* <LandingCard></LandingCard> */}
+      <div className="flex w-full justify-center items-center my-[5%]">
+        <div className="w-fit md:w-4/5 lg:w-3/5 flex flex-col md:flex-row justify-center items-center min-h-fit space-y-6 md:space-x-6 md:space-y-0">
+          <div className="flex flex-col justify-center items-center self-center w-full space-y-6">
+            <SocialTags></SocialTags>
+            {cardData.length !== 0 &&
+            cardData.map((d, idx) => {
+              return (
+                idx<2 ?
+                <LandingCard gradBgFrom={d.gradBgFrom} gradBgTo={d.gradBgTo} textBoxBg={d.textBoxBg} imageSrc={d.imageSrc} isDesktop={d.isDesktop} cardTitle={d.cardTitle} cardSubtitle={d.cardSubtitle}/>
+                :""
+                );
+            })}
+          </div>
+          <div className="flex flex-col justify-center items-center self-center w-full space-y-6">
+          {cardData.length !== 0 &&
+            cardData.map((d, idx) => {
+              return (
+                idx>1 ?
+                <LandingCard gradBgFrom={d.gradBgFrom} gradBgTo={d.gradBgTo} textBoxBg={d.textBoxBg} imageSrc={d.imageSrc} isDesktop={d.isDesktop} cardTitle={d.cardTitle} cardSubtitle={d.cardSubtitle}/>
+                :""
+                );
+            })}
+            <ExploreBrowseTags></ExploreBrowseTags>
           </div>
         </div>
-      </main>
+      </div>
+     <WhoAreWe></WhoAreWe>
     </>
   )
 }
