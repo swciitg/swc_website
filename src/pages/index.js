@@ -59,7 +59,6 @@ export default function Home({cardData,hiringCardData}) {
           </div>
         </div>
       </div>
-       <WeAreHiring cardData={hiringCardData}></WeAreHiring>
       <WhoAreWe></WhoAreWe> 
     </>
   )
