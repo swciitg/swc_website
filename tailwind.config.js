@@ -32,7 +32,8 @@ module.exports = {
         browsebg: '#1C1C1C'
       },
       backgroundImage: {
-        'gradient-45': 'linear-gradient(45deg, var(--tw-gradient-stops))'
+        'gradient-45': 'linear-gradient(45deg, var(--tw-gradient-stops))',
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))'
       },
       backgroundSize:{
         '200%':'200%',
@@ -43,7 +44,6 @@ module.exports = {
         '112':'28rem'
       }
     },
-   
   },
   plugins: [],
 }
