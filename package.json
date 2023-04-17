@@ -9,10 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/react": "^1.0.0-beta.12",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "framer-motion": "^10.10.0",
+    "fs": "^0.0.1-security",
+    "fs.promises": "^0.1.2",
     "next": "13.2.4",
+    "path": "^0.12.7",
     "rainbowvis.js": "^1.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
