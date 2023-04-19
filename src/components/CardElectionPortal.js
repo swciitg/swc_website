@@ -5,7 +5,7 @@ export default function CardElectionPortal() {
       {/* card Component width-*/}
       <div className='relative w-[21rem] h-[25rem] sm:w-[39rem] sm:h-[32rem] rounded-3xl flex-inital'>
         {/* Image part of Card */}
-        <div className='h-3/4 sm:h-4/5 bg-gradient-to-bl from-[#A06DB2] via-[#EEDDA1] to-[#9A5D89]  rounded-t-3xl'></div>
+        <div className='h-3/4 sm:h-4/5 bg-[url(/cards/electionPortal.png)] bg-cover rounded-t-3xl'></div>
         {/* Footer part of Card */}
         <div className=' bg-[#321F24] overflow-auto w-full  h-1/4 sm:h-1/5 rounded-b-3xl px-[1rem] pb-[0.5rem]'>  
           <div>

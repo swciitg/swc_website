@@ -5,7 +5,7 @@ export default function CardSwcJourney() {
       {/* card Component*/}
       <div className='relative w-[21rem] h-[25rem] sm:w-[28rem] sm:h-[32rem] rounded-3xl flex-initial'>
         {/* Image part of Card */}
-        <div className='h-3/4 bg-gradient-to-bl from-[#CBF4B7] via-[#93DAA5] to-[#36A27C]  rounded-t-3xl'></div>
+        <div className='h-3/4 bg-[url(/cards/swcJourney.jpg)] bg-cover rounded-t-3xl'></div>
         {/* Footer part of Card */}
         <div className=' bg-[#1F322B] overflow-auto w-full h-1/4 rounded-b-3xl px-[1rem] pb-[0.5rem]'>  
           <div>

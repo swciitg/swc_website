@@ -5,7 +5,7 @@ export default function CardOneStop() {
       {/* card Component*/}
       <div className='relative w-[50rem] h-[23rem] sm:w-[68rem] sm:h-[22rem] rounded-3xl flex-initial'>
         {/* Image part of Card */}
-        <div className='h-3/4 bg-gradient-to-br from-[#839BCC] via-[#5271AD] to-[#3A5C95]  rounded-t-3xl'></div>
+        <div className='h-3/4 bg-[url(/cards/oneStop.jpg)] bg-cover rounded-t-3xl'></div>
         {/* Footer part of Card */}
         <div className=' h-1/4 bg-[#1A2636] overflow-auto w-full  rounded-b-3xl px-[1rem] pb-[0.5rem]'>  
           <div>
