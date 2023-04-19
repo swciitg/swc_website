@@ -4,34 +4,34 @@
         "title": "Junior Frontend Developer",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos consequatur commodi autem molestias nisi sint, architecto, in, deleniti dolore",
         "eligibility": "HTML,C++",
-        "color": "bg-[#1FBA9F]"
+        "color": "color1"
     },
     {
         "id": "2",
         "title": "Junior Backend Developer",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos consequatur commodi autem molestias nisi sint, architecto, in, deleniti dolore",
         "eligibility": "HTML,C++",
-        "color": "bg-[#E6457D]"
+        "color": "color2"
     },
     {
         "id": "3",
         "title": "Junior App Developer",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos consequatur commodi autem molestias nisi sint, architecto, in, deleniti dolore",
         "eligibility": "HTML,C++",
-        "color": "bg-[#F8E713]"
+        "color": "color3"
     },
     {
         "id": "4",
         "title": "Junior Product Designer",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos consequatur commodi autem molestias nisi sint, architecto, in, deleniti dolore",
         "eligibility": "HTML,C++",
-        "color": "bg-[#0E49D7]"
+        "color": "color4"
     },
     {
         "id": "5",
         "title": "Junior Product Manager",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos consequatur commodi autem molestias nisi sint, architecto, in, deleniti dolore",
         "eligibility": "HTML,C++",
-        "color": "bg-[#3217A4]"
+        "color": "color5"
     }
 ]
