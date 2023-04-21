@@ -55,11 +55,14 @@ export default function Team({coreTeamData, headData}) {
         </clipPath>
         </defs>
       </svg>
-      <div className="flex flex-col justify-center items-center w-[90%] md:w-4/5 h-auto mx-auto">
+      <div className="flex flex-col justify-center items-center w-[90%] md:w-4/5 h-auto mx-auto mb-4 md:mb-10">
         {headData.length !== 0 &&
-          headData.map((d) => {
+          headData.map((d, idx) => {
               return (
-                <HeadInfoCard pfp={d.pfp} por={d.por} name={d.name} degree={d.degree} phno={d.phno}></HeadInfoCard>
+                <>
+                  <HeadInfoCard pfp={d.pfp} por={d.por} name={d.name} degree={d.degree} phno={d.phno}></HeadInfoCard>
+                  {idx<8 && <hr class="w-[60%] md:w-3/4 h-px ml-auto my-3 md:my-6 bg-white border-0 rounded"></hr>}
+                </>
               );
             }
           )
