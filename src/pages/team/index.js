@@ -1,9 +1,21 @@
 import CoreTeamCard from '@/components/CoreTeamCard'
 import HeadInfoCard from '@/components/HeadInfoCard'
 import { Inter } from 'next/font/google'
+import { getCoreTeamData } from '../../../lib/coreTeamData'
+import { getHeadData } from '../../../lib/headData'
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Team() {
+export async function getStaticProps() {
+  const coreTeamData = await getCoreTeamData()
+  const headData = await getHeadData()
+
+  return {
+    props: {coreTeamData, headData} 
+  }
+  
+}
+
+export default function Team({coreTeamData, headData}) {
   return (
   <>
       {/* this dummy div is for adjusting top position Must be included in every index file-- 3rem for Header and 9rem for Navbar*/}
@@ -43,10 +55,18 @@ export default function Team() {
         </clipPath>
         </defs>
       </svg>
-      <div className="flex flex-col justify-center items-center w-[90%] md:w-4/5 h-auto mx-auto">
-        <HeadInfoCard></HeadInfoCard>
-        <HeadInfoCard></HeadInfoCard>
-        <HeadInfoCard></HeadInfoCard>
+      <div className="flex flex-col justify-center items-center w-[90%] md:w-4/5 h-auto mx-auto mb-4 md:mb-10">
+        {headData.length !== 0 &&
+          headData.map((d, idx) => {
+              return (
+                <>
+                  <HeadInfoCard pfp={d.pfp} por={d.por} name={d.name} degree={d.degree} phno={d.phno}></HeadInfoCard>
+                  {idx<8 && <hr class="w-[60%] md:w-3/4 h-px ml-auto my-3 md:my-6 bg-white border-0 rounded"></hr>}
+                </>
+              );
+            }
+          )
+        }
       </div>
 
       {/* meet the core team svg */}
@@ -78,13 +98,14 @@ export default function Team() {
       </defs>
     </svg>
     <div className="flex flex-row flex-wrap justify-center items-center w-[90%] md:w-4/5 h-auto mx-auto">
-    <CoreTeamCard></CoreTeamCard>
-    <CoreTeamCard></CoreTeamCard>
-    <CoreTeamCard></CoreTeamCard>
-    <CoreTeamCard></CoreTeamCard>
-    <CoreTeamCard></CoreTeamCard>
-    <CoreTeamCard></CoreTeamCard>
-        
+      {coreTeamData.length !== 0 &&
+        coreTeamData.map((d) => {
+            return (
+              <CoreTeamCard pfp={d.pfp} name={d.name}></CoreTeamCard>
+            );
+          }
+        )
+      }
     </div>
   </>
   )
