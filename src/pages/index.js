@@ -2,26 +2,19 @@ import Head from 'next/head'
 import { Inter} from 'next/font/google'
 import Headline from '../components/Headline'
 import WhoAreWe from '../components/WhoAreWe'
-import LandingCard from '@/components/LandingCard'
 import SocialTags from '@/components/SocialTags'
 import ExploreBrowseTags from '@/components/ExploreBrowseTags'
 const inter = Inter({ subsets: ['latin'] })
-import { getCardData } from '../../lib/cardData'
-import { getHiringCardData } from '../../lib/HiringCardData'
-import WeAreHiring from '@/components/WeAreHiring'
-
-export async function getStaticProps() {
-  const cardData = await getCardData()
-  // Storing data of Hiring Cards from json file
-  const hiringCardData=await getHiringCardData();
-
-  return {
-    props: { cardData,hiringCardData }
-  }
-}
+// import { getHiringCardData } from '../../lib/HiringCardData'
+// import WeAreHiring from '@/components/WeAreHiring'
+import LandingCard1 from '@/components/LandingCard1'
+import LandingCard2 from '@/components/LandingCard2'
+import LandingCard3 from '@/components/LandingCard3'
+import LandingCard4 from '@/components/LandingCard4'
 
 
-export default function Home({cardData,hiringCardData}) {
+
+export default function Home() {
 // console.log(cardData)
   return (
     <>
@@ -34,27 +27,17 @@ export default function Home({cardData,hiringCardData}) {
       <Headline/>
       {/* <LandingCard></LandingCard> */}
        <div className="flex w-full justify-center items-center my-[5%]">
-        <div className="w-fit md:w-4/5 lg:w-3/5 flex flex-col md:flex-row justify-center items-center min-h-fit space-y-6 md:space-x-6 md:space-y-0">
+        <div className="w-full md:w-4/5 lg:w-3/5 flex flex-col md:flex-row justify-center items-center min-h-fit space-y-6 md:space-x-6 md:space-y-0">
           <div className="flex flex-col justify-center items-center self-center w-full space-y-6">
             <SocialTags></SocialTags>
-            {cardData.length !== 0 &&
-            cardData.map((d, idx) => {
-              return (
-                idx<2 ?
-                <LandingCard gradBgFrom={d.gradBgFrom} gradBgTo={d.gradBgTo} textBoxBg={d.textBoxBg} imageSrc={d.imageSrc} isDesktop={d.isDesktop} cardTitle={d.cardTitle} cardSubtitle={d.cardSubtitle}/>
-                :""
-                );
-            })}
+            <LandingCard1></LandingCard1>
+            <LandingCard2></LandingCard2>
+
           </div>
           <div className="flex flex-col justify-center items-center self-center w-full space-y-6">
-          {cardData.length !== 0 &&
-            cardData.map((d, idx) => {
-              return (
-                idx>1 ?
-                <LandingCard gradBgFrom={d.gradBgFrom} gradBgTo={d.gradBgTo} textBoxBg={d.textBoxBg} imageSrc={d.imageSrc} isDesktop={d.isDesktop} cardTitle={d.cardTitle} cardSubtitle={d.cardSubtitle}/>
-                :""
-                );
-            })}
+          <LandingCard3></LandingCard3>
+          <LandingCard4></LandingCard4>
+
             <ExploreBrowseTags></ExploreBrowseTags>
           </div>
         </div>
