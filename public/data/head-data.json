@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "pfp": "/../public/Images/team_photos/kunal.png",
+      "por": "General Secretary",
+      "name": "Kunal Pal",
+      "degree": "B.Tech, Civil",
+      "phno": "+91 7303744997"
+    },
+    {
+        "id": 2,
+        "pfp": "/../public/Images/team_photos/vighnesh.png",
+        "por": "Overall Coordinator",
+        "name": "Vighnesh Deshpande",
+        "degree": "B.Tech, ECE",
+        "phno": "+91 9819532497"
+    },
+    {
+        "id": 3,
+        "pfp": "/../public/Images/team_photos/sarthak.png",
+        "por": "Webmaster",
+        "name": "Sarthak Diwan",
+        "degree": "B.Tech, MnC",
+        "phno": "+91 7018236559"
+    },
+    {
+        "id": 4,
+        "pfp": "/../public/Images/team_photos/yashi.png",
+        "por": "Frontend Lead",
+        "name": "Yashi Natu",
+        "degree": "B.Tech, ECE",
+        "phno": "+91 9752886479"
+    },
+    {
+        "id": 5,
+        "pfp": "/../public/Images/team_photos/arpit.png",
+        "por": "Backend Lead",
+        "name": "Arpit Sureka",
+        "degree": "B.Tech, Mechanical",
+        "phno": "+91 9737951693"
+    },
+    {
+        "id": 6,
+        "pfp": "/../public/Images/team_photos/hareesh.png",
+        "por": "App Lead",
+        "name": "Hareesh Nandigrama",
+        "degree": "B.Tech, CSE",
+        "phno": "+91 7780298361"
+    },
+    {
+        "id": 7,
+        "pfp": "/../public/Images/team_photos/ayushi.png",
+        "por": "Design Lead",
+        "name": "Ayushi Anand",
+        "degree": "B.Tech, Mechanical",
+        "phno": "+91 7678948221"
+    },
+    {
+        "id": 8,
+        "pfp": "/../public/Images/team_photos/chinmay.png",
+        "por": "Design System Lead",
+        "name": "Chinmay Zinjal",
+        "degree": "B.Tech, Chemical",
+        "phno": "+91 7709595217"
+    },
+    {
+        "id": 9,
+        "pfp": "/../public/Images/team_photos/aniruddha.png",
+        "por": "PM Lead",
+        "name": "Aniruddha Patil",
+        "degree": "B.Tech, Civil",
+        "phno": "+91 8669979900"
+    }
+  ]

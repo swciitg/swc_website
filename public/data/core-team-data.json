@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "pfp": "/../public/Images/team_photos/akshat.png",
+      "name": "Akshat Singhal"
+    },
+    {
+        "id": 2,
+        "pfp": "/../public/Images/team_photos/ayush.png",
+        "name": "Ayush Datta Jaiswal"
+      },
+
+    {
+        "id": 3,
+        "pfp": "/../public/Images/team_photos/tarannum.png",
+        "name": "Tarannum"
+    },
+    {
+        "id": 4,
+        "pfp": "/../public/Images/team_photos/mohit.png",
+        "name": "Mohit Manoj"
+    },
+    {
+        "id": 5,
+        "pfp": "/../public/Images/team_photos/parshwa.png",
+        "name": "Parshva Shah"
+    },
+    {
+        "id": 6,
+        "pfp": "/../public/Images/team_photos/jitendra.png",
+        "name": "Jitendra Kr. Pandey"
+    }
+  ]
