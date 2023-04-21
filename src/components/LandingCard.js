@@ -10,7 +10,7 @@ const LandingCard = ({gradBgFrom, gradBgTo, textBoxBg, imageSrc, isDesktop, card
                                 height={458}
                                 alt="Icon not found" />
             </div>
-            <div className={`w-inherit h-16 bg-darkgreybg overflow-hidden m-0 px-[8%] flex flex-col justify-center`}>
+            <div className={`w-inherit h-16 bg-${textBoxBg} overflow-hidden m-0 px-[8%] flex flex-col justify-center`}>
                 <div className="flex flex-row-reverse justify-between">
                     <div className="flex grow-0 justify-center items-center">
                         {/* arrow svg */}
@@ -22,7 +22,7 @@ const LandingCard = ({gradBgFrom, gradBgTo, textBoxBg, imageSrc, isDesktop, card
                         <span className="font-['Inter'] text-base text-left font-bold">
                             {cardTitle}
                         </span>
-                        <span className="font-['Inter'] left-0 font-normal text-sm text-left font-light">
+                        <span className="font-['Inter'] left-0 font-normal text-sm text-left">
                             {cardSubtitle}
                         </span>
                     </div>
