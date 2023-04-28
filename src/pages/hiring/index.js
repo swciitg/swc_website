@@ -25,9 +25,9 @@ export default function Home({ExperienceData,hiringCardData}) {
     <div>
        <WeAreHiring cardData={hiringCardData}></WeAreHiring>
     </div>
-    <div className='flex justify-center xl:justify-center overflow-auto pt-16 px-[0.5rem] bg-black'>
+    {/* <div className='flex justify-center xl:justify-center overflow-auto pt-16 px-[0.5rem] bg-black'>
       <CarouselSlides ExperienceData={ExperienceData}></CarouselSlides>
-      </div>
+      </div> */}
     </>
   )
 }
