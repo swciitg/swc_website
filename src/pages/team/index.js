@@ -1,8 +1,12 @@
-import CoreTeamCard from '@/components/CoreTeamCard'
-import HeadInfoCard from '@/components/HeadInfoCard'
 import { Inter } from 'next/font/google'
 import { getCoreTeamData } from '../../../lib/coreTeamData'
 import { getHeadData } from '../../../lib/headData'
+import HeadInfoCard1 from '@/components/HeadInfoCard1'
+import HeadInfoCard2 from '@/components/HeadInfoCard2'
+import HeadInfoCard3 from '@/components/HeadInfoCard3'
+import CoreTeamCard1 from '@/components/CoreTeamCard1'
+import CoreTeamCard2 from '@/components/CoreTeamCard2'
+import CoreTeamCard3 from '@/components/CoreTeamCard3'
 const inter = Inter({ subsets: ['latin'] })
 
 export async function getStaticProps() {
@@ -60,7 +64,9 @@ export default function Team({coreTeamData, headData}) {
           headData.map((d, idx) => {
               return (
                 <>
-                  <HeadInfoCard pfp={d.pfp} por={d.por} name={d.name} degree={d.degree} phno={d.phno}></HeadInfoCard>
+                  {idx%3===0 && <HeadInfoCard1 pfp={d.pfp} por={d.por} name={d.name} degree={d.degree} phno={d.phno}></HeadInfoCard1>}
+                  {idx%3===1 && <HeadInfoCard2 pfp={d.pfp} por={d.por} name={d.name} degree={d.degree} phno={d.phno}></HeadInfoCard2>}
+                  {idx%3===2 && <HeadInfoCard3 pfp={d.pfp} por={d.por} name={d.name} degree={d.degree} phno={d.phno}></HeadInfoCard3>}
                   {idx<8 && <hr class="w-[60%] md:w-3/4 h-px ml-auto my-3 md:my-6 bg-white border-0 rounded"></hr>}
                 </>
               );
@@ -99,9 +105,14 @@ export default function Team({coreTeamData, headData}) {
     </svg>
     <div className="flex flex-row flex-wrap justify-center items-center w-[90%] md:w-4/5 h-auto mx-auto">
       {coreTeamData.length !== 0 &&
-        coreTeamData.map((d) => {
+        coreTeamData.map((d, idx) => {
             return (
-              <CoreTeamCard pfp={d.pfp} name={d.name}></CoreTeamCard>
+              <>
+                {idx%3===0 && <CoreTeamCard1 pfp={d.pfp} name={d.name}></CoreTeamCard1>}
+                {idx%3===1 && <CoreTeamCard2 pfp={d.pfp} name={d.name}></CoreTeamCard2>}
+                {idx%3===2 && <CoreTeamCard3 pfp={d.pfp} name={d.name}></CoreTeamCard3>}
+                
+              </>
             );
           }
         )

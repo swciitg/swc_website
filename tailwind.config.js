@@ -24,12 +24,15 @@ module.exports = {
         darkgreenbg: '#1F322B',
         graddarkbluedark: '#a0b6f5',
         gradwhitelight: '#01175D',
-        darkbluebg: '#1F322B',
+        darkbluebg: '#01175D',
         cardimgshadow: '#0D2368',
         discordbg: '#5865F2',
         githubbg: '#171515',
         explorebg: '#3660F4',
-        browsebg: '#1C1C1C'
+        browsebg: '#1C1C1C',
+        teambg1: '#51C5B2',
+        teambg2: '#FF4A85',
+        teambg3: '#FFEC00'
       },
       backgroundImage: {
         'gradient-45': 'linear-gradient(45deg, var(--tw-gradient-stops))',
@@ -40,8 +43,7 @@ module.exports = {
         '100%': '100%',
       },
       spacing: {
-        '104':'22rem',
-        '112':'28rem'
+        '50':'12.5rem'
       }
     },
   },
