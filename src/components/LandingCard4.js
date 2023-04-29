@@ -1,9 +1,9 @@
-
+import Link from 'next/link'
 import Image from 'next/image';
 
 const LandingCard4 = () => { 
     return (
-        <div className="group w-4/5 sm:w-3/4 md:w-full lg:w-full bg-gradient-45 from-graddarkbluedark to-gradwhitelight rounded-3xl overflow-hidden flex flex-col m-0 hover:opacity-50 transition-all duration-300 hover:cursor-pointer">
+        <Link target='_blank' href='https://github.com/swciitg/SWC_Course_Directory' className="group w-4/5 sm:w-3/4 md:w-full lg:w-full bg-gradient-45 from-graddarkbluedark to-gradwhitelight rounded-3xl overflow-hidden flex flex-col m-0 hover:opacity-50 transition-all duration-300 hover:cursor-pointer">
             <div className="mt-[8%] ml-[10%] rounded-tl-xl shadow-lg shadow-cardimgshadow overflow-hidden">
             <Image src="/../public/course-directory-screen.png" width={619} height={458}/>
             </div>
@@ -25,7 +25,7 @@ const LandingCard4 = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
         
     );
 }
