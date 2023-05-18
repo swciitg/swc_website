@@ -1,9 +1,9 @@
-
+import Link from 'next/link'
 import Image from 'next/image';
 
 const LandingCard1 = () => { 
     return (
-        <div className="group w-4/5 sm:w-3/4 md:w-full lg:w-full bg-gradient-45 from-gradbluedark to-gradbluelight rounded-3xl overflow-hidden flex flex-col m-0 hover:opacity-50 transition-all duration-300 hover:cursor-pointer">
+        <Link target='_blank' href='https://play.google.com/store/apps/details?id=com.swciitg.onestop2' className="group w-4/5 sm:w-3/4 md:w-full lg:w-full bg-gradient-45 from-gradbluedark to-gradbluelight rounded-3xl overflow-hidden flex flex-col m-0 hover:opacity-50 transition-all duration-300 hover:cursor-pointer">
             <div className="max-h-50 md:max-h-64 mx-[20%] md:mx-auto mt-[8%] w-fit rounded-t-2xl shadow-lg shadow-cardimgshadow overflow-hidden">
                 <Image src="/../public/one-stop-screen.png" width={250} height={1000}/>
             </div>
@@ -22,7 +22,7 @@ const LandingCard1 = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
         
     );
 }
