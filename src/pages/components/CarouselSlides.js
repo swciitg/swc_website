@@ -19,8 +19,8 @@ const CarouselSlides = ({ExperienceData}) => {
     const NextButtonRef = useRef(null);
 
     return (
-      <div className='relative max-w-max max-h-max pl-[25px] pr-[28px]'>
-        <Swiper className='group sm:max-w-xl max-h-5xl w-60 h-70 sm:w-auto sm:h-auto p-[1px] rounded-lg'
+      <div className='sticky top-0 max-w-max max-h-max pl-[25px] pr-[28px]'>
+        <Swiper className='group sm:max-w-3xl max-h-5xl w-60 h-70 sm:w-auto sm:h-auto p-[1px] rounded-lg'
           modules={[Navigation,EffectFlip]}
           effect={"flip"}
           slidesPerView={1}
@@ -39,7 +39,7 @@ const CarouselSlides = ({ExperienceData}) => {
         {cardData.length !== 0 &&
           cardData.map((cards) => {
           return (
-          <SwiperSlide className='min-w-max min-h-max'>
+          <SwiperSlide className='w-[100%] min-h-max'>
             <CardCarousel ImgSrc={cards.ImgSrc} Title={cards.Title} Designation={cards.Designation} Content={cards.Content}/>
           </SwiperSlide>
           );
