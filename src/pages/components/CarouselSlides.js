@@ -37,9 +37,9 @@ const CarouselSlides = ({ExperienceData}) => {
           
 
         {cardData.length !== 0 &&
-          cardData.map((cards) => {
+          cardData.map((cards, ind) => {
           return (
-          <SwiperSlide className='w-[100%] min-h-max'>
+          <SwiperSlide key={ind} className='w-[100%] min-h-max'>
             <CardCarousel ImgSrc={cards.ImgSrc} Title={cards.Title} Designation={cards.Designation} Content={cards.Content}/>
           </SwiperSlide>
           );
