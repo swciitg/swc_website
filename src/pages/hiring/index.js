@@ -4,7 +4,7 @@ const inter = Inter({ subsets: ['latin'] })
 import { getHiringCardData } from '../../../lib/HiringCardData'
 import WeAreHiring from '@/components/WeAreHiring'
 import { getExperienceData } from '../../../lib/ExperienceData'
-import CarouselSlides from '../components/CarouselSlides'
+import CarouselSlides from '../../components/CarouselSlides'
 
 export async function getStaticProps() {
   // Storing data of Hiring Cards from json file
