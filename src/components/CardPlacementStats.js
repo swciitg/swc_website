@@ -12,10 +12,9 @@ export default function CardPlacementStats() {
             <h1 className='p-[0.5rem] sm:p-[1rem] text-white text-xl font-bold'>Placement Stats Portal</h1>{/* Title of Card*/}
             <ul className='text-white/50 flex flex-row flex-start flex-initial flex-wrap gap-[0.5rem] pb-[0.5rem] sm:pb-[1rem] px-[0.5rem] sm:px-[1rem]'>
                 {/* Buttons of Card*/}
-                <li className='rounded-[2.5rem] text-sm sm:text-[1rem] border-white/50 border px-4 py-2.5 bg-black bg-opacity-50'><a href="" target='_blank'>Chrome Web Store</a> </li>
-                <li className='rounded-[2.5rem] text-sm sm:text-[1rem] border-white/50 border px-4 py-2.5 bg-black bg-opacity-50'><a href="" target='_blank'>Product Hunt</a></li>
-                <li className='rounded-[2.5rem] text-sm sm:text-[1rem] border-white/50 border px-4 py-2.5 bg-black bg-opacity-50'><a href="" target='_blank'>Website</a></li>
-                <li className='rounded-[2.5rem] text-sm sm:text-[1rem] border-white/50 border px-4 py-2.5 bg-black bg-opacity-50'><a href="" target='_blank'>Github</a></li>
+                <li className='rounded-[2.5rem] text-sm sm:text-[1rem] border-white/50 border px-4 py-2.5 bg-black bg-opacity-50 hover:opacity-50 hover:cursor-pointer'><a href="https://swc.iitg.ac.in/placement-stats/" target='_blank'>Website</a></li>
+                <li className='rounded-[2.5rem] text-sm sm:text-[1rem] border-white/50 border px-4 py-2.5 bg-black bg-opacity-50 hover:opacity-50 hover:cursor-pointer'><a href="https://swc.iitg.ac.in/placement-stats/table/" target='_blank'>Tabular View</a></li>
+                <li className='rounded-[2.5rem] text-sm sm:text-[1rem] border-white/50 border px-4 py-2.5 bg-black bg-opacity-50 hover:opacity-50 hover:cursor-pointer'><a href="https://swc.iitg.ac.in/placement-stats/charts/" target='_blank'>Chart View</a></li>
             </ul>
           </div>
         </div>

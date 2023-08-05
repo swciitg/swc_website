@@ -13,33 +13,31 @@ const Footer = () => {
                         </div>
                         <div className="flex flex-col pr-4">
                             <div className="flex text-greyuse">swc@iitg.ac.in</div>
-                            <div className="flex text-greyuse">+91 807 9083 829</div>
+                            <div className="flex text-greyuse">+91 730 374 4997</div>
                         </div>
                     </div>
                 </div>
                 <div className="lg:border-l-[1px] lg:border-white"></div>
                 <div className="justify-around lg:basis-2/5 flex">
                     <div className="flex flex-col">
-                        <div className="flex font-Inter text-lg sm:text-xl font-bold leading-6 tracking-wider mb-3">Gitbooks</div>
-                        <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Docs</div>
-                        <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Open Source</div>
-                        <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Timelines</div>
-                        <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Outsourcing</div>
+                        <div className="flex font-Inter text-lg sm:text-xl font-bold leading-6 tracking-wider mb-3">Important Links</div>
+                        <a href="https://github.com/swciitg" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Github</a>
+                        <a href="/team" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Team</a>
+                        <a href="/products" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Products</a>
+                        <a href="/hiring" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Apply Now!</a>
                     </div>
                     <div className="flex flex-col">
-                        <div className="flex font-Inter text-lg sm:text-xl font-bold leading-6 tracking-wider mb-3">Resources</div>
-                        <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Blogs</div>
-                        <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Case Studies</div>
-                        <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Guidelines</div>
+                        <a href="" className="flex font-Inter text-lg sm:text-xl font-bold leading-6 tracking-wider mb-3">Gymkhana Sites</a>
+                        <a href="https://intranet.iitg.ac.in/sa/" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">SA Portal</a>
+                        <a href="https://swc.iitg.ac.in/hab/" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">HAB Portal</a>
+                        <a href="https://swc.iitg.ac.in/sports_board/" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Sports Board</a>
                     </div>
                     <div className="flex flex-col">
-                        <div className="flex font-Inter text-lg sm:text-xl font-bold leading-6 tracking-wider mb-3">Products</div>
-                        <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Placement Portal</div>
-                        <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Election Portal</div>
-                        <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">One Stop</div>
-                        <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Vaccination Portal</div>
-                        <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Journeys</div>
-                        <div className="flex text-greyuse sm:text-sm text-xs font-normal leading-6">Shodh</div>
+                        <div className="flex font-Inter text-lg sm:text-xl font-bold leading-6 tracking-wider mb-3">Our Products</div>
+                        <a href="https://online.iitg.ac.in/tnp/" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Placement Portal</a>
+                        <a href="https://swc.iitg.ac.in/election_portal/" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Election Portal</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.swciitg.onestop2" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">One Stop</a>
+                        <a href="https://swc.iitg.ac.in/journeys/" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Journeys</a>
                     </div>
                     {/* <div className="flex flex-col">
                         <div className="flex font-Inter text-lg sm:text-xl font-bold leading-6 tracking-wider mb-3">Teams</div>

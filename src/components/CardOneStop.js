@@ -12,9 +12,8 @@ export default function CardOneStop() {
             <h1 className='p-[0.5rem] sm:p-[1rem] pb-[0.5rem] pt-[1rem] text-white text-xl font-bold'>One Stop</h1>{/* Title of Card*/}
             <ul className='text-white/50 flex flex-row flex-start flex-initial flex-wrap gap-[0.5rem] pb-[0.5rem] sm:pb-[1rem] px-[0.5rem] sm:px-[1rem]'>
                 {/* Buttons of Card*/}
-            <li className='rounded-[2.5rem] text-sm sm:text-[1rem] border-white/50 border px-4 py-2.5 bg-black bg-opacity-50'><a href="" target='_blank'>Play Store</a> </li>
-            <li className='rounded-[2.5rem] text-sm sm:text-[1rem] border-white/50 border px-4 py-2.5 bg-black bg-opacity-50'><a href="" target='_blank'>Dashboard</a></li>
-            <li className='rounded-[2.5rem] text-sm sm:text-[1rem] border-white/50 border px-4 py-2.5 bg-black bg-opacity-50'><a href="" target='_blank'>Github</a></li>
+            <li className='rounded-[2.5rem] text-sm sm:text-[1rem] border-white/50 border px-4 py-2.5 bg-black bg-opacity-50 hover:opacity-50 hover:cursor-pointer'><a href="https://play.google.com/store/apps/details?id=com.swciitg.onestop2" target='_blank'>Play Store</a> </li>
+            <li className='rounded-[2.5rem] text-sm sm:text-[1rem] border-white/50 border px-4 py-2.5 bg-black bg-opacity-50 hover:opacity-50 hover:cursor-pointer'><a href="https://apps.apple.com/in/app/onestop-iitg/id1642792642" target='_blank'>App Store</a></li>
             </ul>
           </div>
         </div>
