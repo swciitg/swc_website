@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 const Footer = () => {
     return (
         <div className="flex flex-col bg-specialgrey mb-0 mt-12 bottom-0">
@@ -22,9 +23,9 @@ const Footer = () => {
                     <div className="flex flex-col">
                         <div className="flex font-Inter text-lg sm:text-xl font-bold leading-6 tracking-wider mb-3">Important Links</div>
                         <a href="https://github.com/swciitg" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Github</a>
-                        <a href="/team" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Team</a>
-                        <a href="/products" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Products</a>
-                        <a href="/hiring" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Apply Now!</a>
+                        <Link href="/team" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Team</Link>
+                        <Link href="/products" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Products</Link>
+                        <Link href="/hiring" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Apply Now!</Link>
                     </div>
                     <div className="flex flex-col">
                         <a href="" className="flex font-Inter text-lg sm:text-xl font-bold leading-6 tracking-wider mb-3">Gymkhana Sites</a>
