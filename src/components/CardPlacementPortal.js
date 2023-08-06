@@ -5,7 +5,7 @@ export default function CardPlacementPortal() {
       {/* card Component*/}
       <div className='flex flex-col relative w-[50rem] h-[23rem] sm:w-[68rem] sm:h-[22rem] rounded-3xl flex-initial'>
         {/* Image part of Card */}
-        <div className='h-[60%] sm:h-[65%] bg-[url(/cards/placementPortal.jpg)] bg-cover rounded-t-3xl'></div>
+        <div className='h-[60%] sm:h-[65%] bg-[url(../../public/cards/placementPortal.jpg)] bg-cover rounded-t-3xl'></div>
         {/* Footer part of Card */}
         <div className='bg-[#571A18] overflow-hidden w-full h-fit rounded-b-3xl px-[1rem] pb-[0.5rem]'>  
           <div>

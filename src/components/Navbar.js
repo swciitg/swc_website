@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
 import { Cedarville_Cursive } from 'next/font/google'
+import Image from 'next/image'
+import arrowSVG from "../../public/tap-for.svg"
 const cedar = Cedarville_Cursive({subsets:['latin'], weight:['400']})
 
 export default function Navbar() {
@@ -20,11 +22,7 @@ export default function Navbar() {
             href="/"
           >
             <div className="w-[2.5rem] h-[4.5rem] shrink-0 flex flex-col justify-center">
-              <img
-                className="relative w-[2.5rem] h-[1.81rem] shrink-0 object-cover"
-                alt=""
-                src="/swc-logo.png"
-              />
+             <Image src="/../public/swc-logo.png" width={250} height={250}/>
             </div>
             <div className="relative leading-[1.25rem] font-black">
               Students’ Web Committee
@@ -63,11 +61,7 @@ export default function Navbar() {
               <p className={cedar.className}>amazing</p>
               <p className={cedar.className}>projects</p>
               </div>
-              <img
-              className="absolute top-[-0.03rem] left-[0.03rem] w-[3rem] h-[2rem] md:w-[5.76rem] md:h-[4.32rem]"
-              alt=""
-              src="/tap-for.svg"
-              />  
+              <Image src={arrowSVG} width={100} height={100}/>
             </div>
       </div>
     </div>

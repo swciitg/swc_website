@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div>
       <header className="fixed top-0 w-full h-[3rem] flex flex-col  box-border items-center justify-center ">
-      <header className="relative top-0 flex flex-auto flex-row items-center  justify-center gap-[0.5rem] text-left text-[0.75rem] md:text-[1rem]  text-white font-inter bg-[url(/header-bg.png)] bg-contain 2xl:bg-cover bg-repeat-y bg-top  overflow-hidden w-full h-[3rem] ">
+      <header className="relative top-0 flex flex-auto flex-row items-center  justify-center gap-[0.5rem] text-left text-[0.75rem] md:text-[1rem]  text-white font-inter bg-[url(../../public/header-bg.png)] bg-contain 2xl:bg-cover bg-repeat-y bg-top  overflow-hidden w-full h-[3rem] ">
         <div className="w-auto xl:w-[60rem] lg:w-[40rem] p-2 leading-[120%] uppercase tracking-wide	">
           <span>SWC is hiring for various </span>
           <b>positions</b>
