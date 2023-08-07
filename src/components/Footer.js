@@ -5,8 +5,8 @@ const Footer = () => {
         <div className="flex flex-col bg-specialgrey mb-0 mt-12 bottom-0">
             <div className=" flex flex-col lg:flex-row justify-evenly  pt-8">
                 <div className=" flex flex-col  basis-1 lg:basis-1/3">
-                    <div className="font-Inter pl-8 text-2xl md:text-6xl xl:text-6xl leading-tight md:text-center">Get in touch! <p className="hidden lg:inline">&nbsp;</p></div>
-                    <div className="flex justify-around my-4">
+                    <div className="font-Inter text-2xl md:text-6xl xl:text-6xl leading-tight md:text-center mx-auto">Get in touch! <p className="hidden lg:inline">&nbsp;</p></div>
+                    <div className="flex justify-around my-4 mx-6">
                         <div className="flex flex-col">
                             <div className="flex text-greyuse">SWC, New SAC</div>
                             <div className="flex text-greyuse">IIT Guwahati</div>
@@ -19,7 +19,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="lg:border-l-[1px] lg:border-white"></div>
-                <div className="justify-around lg:basis-2/5 flex">
+                <div className="justify-around lg:basis-2/5 flex ml-4 md:ml-0">
                     <div className="flex flex-col">
                         <div className="flex font-Inter text-lg sm:text-xl font-bold leading-6 tracking-wider mb-3">Important Links</div>
                         <a href="https://github.com/swciitg" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Github</a>
