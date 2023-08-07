@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "pfp": "/../public/Images/team_photos/kunal.png",
+      "pfp": "/swc/Images/team_photos/kunal.png",
       "por": "General Secretary",
       "name": "Kunal Pal",
       "degree": "B.Tech, Civil",
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "pfp": "/../public/Images/team_photos/vighnesh.png",
+        "pfp": "/swc/Images/team_photos/vighnesh.png",
         "por": "Overall Coordinator",
         "name": "Vighnesh Deshpande",
         "degree": "B.Tech, ECE",
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "pfp": "/../public/Images/team_photos/sarthak.png",
+        "pfp": "/swc/Images/team_photos/sarthak.png",
         "por": "Webmaster",
         "name": "Sarthak Diwan",
         "degree": "B.Tech, MnC",
@@ -25,7 +25,7 @@
     },
     {
         "id": 4,
-        "pfp": "/../public/Images/team_photos/yashi.png",
+        "pfp": "/swc/Images/team_photos/yashi.png",
         "por": "Frontend Lead",
         "name": "Yashi Natu",
         "degree": "B.Tech, ECE",
@@ -33,7 +33,7 @@
     },
     {
         "id": 5,
-        "pfp": "/../public/Images/team_photos/arpit.png",
+        "pfp": "/swc/Images/team_photos/arpit.png",
         "por": "Backend Lead",
         "name": "Arpit Sureka",
         "degree": "B.Tech, Mechanical",
@@ -41,7 +41,7 @@
     },
     {
         "id": 6,
-        "pfp": "/../public/Images/team_photos/hareesh.png",
+        "pfp": "/swc/Images/team_photos/hareesh.png",
         "por": "App Lead",
         "name": "Hareesh Nandigrama",
         "degree": "B.Tech, CSE",
@@ -49,7 +49,7 @@
     },
     {
         "id": 7,
-        "pfp": "/../public/Images/team_photos/ayushi.png",
+        "pfp": "/swc/Images/team_photos/ayushi.png",
         "por": "Design Lead",
         "name": "Ayushi Anand",
         "degree": "B.Tech, Mechanical",
@@ -57,7 +57,7 @@
     },
     {
         "id": 8,
-        "pfp": "/../public/Images/team_photos/chinmay.png",
+        "pfp": "/swc/Images/team_photos/chinmay.png",
         "por": "Design System Lead",
         "name": "Chinmay Zinjal",
         "degree": "B.Tech, Chemical",
@@ -65,7 +65,7 @@
     },
     {
         "id": 9,
-        "pfp": "/../public/Images/team_photos/aniruddha.png",
+        "pfp": "/swc/Images/team_photos/aniruddha.png",
         "por": "PM Lead",
         "name": "Aniruddha Patil",
         "degree": "B.Tech, Civil",

@@ -57,7 +57,7 @@ const Footer = () => {
                     <div className="flex pt-4">
                         <div className="flex mr-3">
                             <a href='https://www.facebook.com/swciitg/' target="_blank">
-                            <Image src="/../public/Icons/Facebook.png"
+                            <Image src="/swc/Icons/Facebook.png"
                                 width={15}
                                 height={15}
                                 alt="Icon not found" />
@@ -65,7 +65,7 @@ const Footer = () => {
                         </div>
                         <div className="flex mr-3">
                             <a href='https://www.instagram.com/swc_iitg/' target="_blank">
-                            <Image src="/../public/Icons/Instagram.png"
+                            <Image src="/swc/Icons/Instagram.png"
                                 width={15}
                                 height={15}
                                 alt="Icon not found" />
@@ -73,21 +73,21 @@ const Footer = () => {
                         </div>
                         <div className="flex mr-3">
                             <a href='https://in.linkedin.com/company/student-s-web-committee-iitg' target="_blank">
-                            <Image src="/../public/Icons/LinkedIn.png"
+                            <Image src="/swc/Icons/LinkedIn.png"
                                 width={15}
                                 height={15}
                                 alt="Icon not found" />
                                 </a>
                         </div>
                         {/* <div className="flex mr-3">
-                            <Image src="/../public/Icons/Pinterest.png"
+                            <Image src="/swc/Icons/Pinterest.png"
                                 width={15}
                                 height={15}
                                 alt="Icon not found" />
                         </div> */}
                         <div className="flex">
                             <a href='https://twitter.com/swciitghy' target="_blank">
-                            <Image src="/../public/Icons/Twitter.png"
+                            <Image src="/swc/Icons/Twitter.png"
                                 width={15}
                                 height={15}
                                 alt="Icon not found" />

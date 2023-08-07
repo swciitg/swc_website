@@ -5,7 +5,7 @@ const LandingCard2 = () => {
     return (
         <Link target='_blank' href='http://intranet.iitg.ac.in/sa' className="group w-4/5 sm:w-3/4 md:w-full lg:w-full bg-gradient-45 from-gradcyandark to-gradgreylight rounded-3xl overflow-hidden flex flex-col m-0 hover:opacity-50 transition-all duration-300 hover:cursor-pointer">
             <div className="mt-[8%] ml-[10%] rounded-tl-xl shadow-lg shadow-cardimgshadow overflow-hidden">
-            <Image src="/../public/sa-portal-screen.png" width={619} height={458}/>
+            <Image src="/swc/sa-portal-screen.png" width={619} height={458}/>
             </div>
             <div className={`w-inherit h-16 bg-darkgreybg overflow-hidden m-0 px-[8%] flex flex-col justify-center`}>
                 <div className="flex flex-row-reverse justify-between">

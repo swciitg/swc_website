@@ -27,21 +27,21 @@ const WhoAreWe = () => {
                 <div className="flex flex-col">
                     <div className="ml-5 mr-5 flex flex-row mb-3">
 
-                        <Link href='/hiring' className={`flex justify-center items-center font-['Inter'] basis-1/3 py-10 mr-4 rounded-3xl  text-base font-semibold ${styles.developer} cursor-pointer`}><p className="text-center mr-2">Developer</p><Image src="/../public/Icons/arrow--up.png"
+                        <Link href='/hiring' className={`flex justify-center items-center font-['Inter'] basis-1/3 py-10 mr-4 rounded-3xl  text-base font-semibold ${styles.developer} cursor-pointer`}><p className="text-center mr-2">Developer</p><Image src="/swc/Icons/arrow--up.png"
                             width={15}
                             height={15}
                             alt="Icon not found" /></Link>
-                        <Link href='/hiring' className={` flex font-['Inter'] basis-3/5 justify-center  items-center rounded-3xl text-base bg-specialgrey font-semibold ${styles.product} cursor-pointer`}><p className="text-center mr-2">Product Designer</p><Image src="/../public/Icons/arrow--up.png"
+                        <Link href='/hiring' className={` flex font-['Inter'] basis-3/5 justify-center  items-center rounded-3xl text-base bg-specialgrey font-semibold ${styles.product} cursor-pointer`}><p className="text-center mr-2">Product Designer</p><Image src="/swc/Icons/arrow--up.png"
                             width={15}
                             height={15}
                             alt="Icon not found" /></Link>
                     </div>
                     <div className="mb-5 ml-5 mr-5 flex flex-row">
-                        <Link href='/hiring' className={` flex justify-center  items-center font-['Inter'] basis-3/5  mr-4  rounded-3xl  text-base bg-specialgrey font-semibold ${styles.manager} cursor-pointer`}><p className="text-center mr-2">Product Manager </p><Image src="/../public/Icons/arrow--up.png"
+                        <Link href='/hiring' className={` flex justify-center  items-center font-['Inter'] basis-3/5  mr-4  rounded-3xl  text-base bg-specialgrey font-semibold ${styles.manager} cursor-pointer`}><p className="text-center mr-2">Product Manager </p><Image src="/swc/Icons/arrow--up.png"
                             width={15}
                             height={15}
                             alt="Icon not found" /></Link>
-                        <Link href='/hiring' className={` flex justify-center items-center font-['Inter'] basis-1/3 py-10  font-semibold rounded-3xl  text-base bg-specialgrey ${styles.growth} cursor-pointer`}><p className="text-center mr-2">Growth</p><Image src="/../public/Icons/arrow--up.png"
+                        <Link href='/hiring' className={` flex justify-center items-center font-['Inter'] basis-1/3 py-10  font-semibold rounded-3xl  text-base bg-specialgrey ${styles.growth} cursor-pointer`}><p className="text-center mr-2">Growth</p><Image src="/swc/Icons/arrow--up.png"
                             width={15}
                             height={15}
                             alt="Icon not found" /></Link>

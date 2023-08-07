@@ -1,0 +1,10 @@
+
+version: '3'
+services:
+  app:
+    container_name: swc_website 
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3020:3000'
