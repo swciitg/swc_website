@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import Footer from '@/components/Footer'
 export default function App({ Component, pageProps }) {
   return (
-    <main>
+    <main className='bg-black text-white'>
     <Component {...pageProps} />
     <Header/>
     <Navbar/>
