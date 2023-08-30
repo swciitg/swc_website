@@ -1,5 +1,5 @@
 FROM node:18-alpine
-WORKDIR  /app
+WORKDIR  /usr/app
 COPY package*.json ./
 RUN npm ci --production
 
