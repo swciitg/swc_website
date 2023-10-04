@@ -32,21 +32,24 @@ export default function Navbar() {
           {/* NAVBAR */}
 
           <div className="rounded-3xl shrink-0 bg-[#1C1C1C] w-[22rem] sm:w-[27rem]  h-[2rem] sm:h-[4rem] md:mx-0 mx-auto overflow-hidden flex flex-row py-[1.5rem] px-[2rem] box-border items-center justify-center text-[1rem] text-[inherit]">
-            <div className="flex flex-row items-center justify-center gap-[1.5rem]">
+            <div className="flex flex-row items-center justify-center gap-[1rem]">
               <div className=" h-[1.25rem] flex flex-col items-center justify-start gap-[0.25rem] text-[inherit]">
-                <Link href='/'className="relative leading-[1.25rem] text-[#777777] hover:text-white font-semibold">Home</Link>
+                <Link href='/'className="relative text-sm leading-[1.3rem] text-[#777777] hover:text-white font-semibold">Home</Link>
                 {/* <div className="relative box-border w-[0.38rem] h-[0.13rem] shrink-0 border-t-[2px] border-solid border-white" /> */}
               </div>
 
-              <Link href='/products' className="[text-decoration:none] relative leading-[1.25rem] font-semibold text-[#777777] hover:text-white">
+              <Link href='/products' className="[text-decoration:none] relative text-sm leading-[1.3rem] font-semibold text-[#777777] hover:text-white">
                 Products
               </Link>
-              <Link href='/team'className="[text-decoration:none] relative leading-[1.25rem] font-semibold  text-[#777777] hover:text-white">
+              <Link href='/resources' className="[text-decoration:none] relative text-sm leading-[1.3rem] font-semibold text-[#777777] hover:text-white">
+                Resources
+              </Link>
+              <Link href='/team'className="[text-decoration:none] relative text-sm  leading-[1.3rem] font-semibold  text-[#777777] hover:text-white">
                 Team
               </Link>
               <div className=" flex flex-row items-center justify-start text-[0.88rem]">
                 <div className=" bg-[#A523AA] rounded-2xl h-[2rem] flex flex-row py-[0.25rem] px-[0.75rem]  items-center justify-center">
-                  <Link href='/hiring' className=" text-white font-serif text-[0.6rem] md:text-[0.75rem] text-center">We Are Hiring!
+                  <Link href='/hiring' className=" text-white font-serif text-[0.4rem] md:text-[0.65rem] text-center">We Are Hiring!
                   </Link> 
               </div>
             </div>
