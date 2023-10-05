@@ -33,6 +33,7 @@ module.exports = {
         teambg1: '#51C5B2',
         teambg2: '#FF4A85',
         teambg3: '#FFEC00'
+        
       },
       backgroundImage: {
         'gradient-45': 'linear-gradient(45deg, var(--tw-gradient-stops))',
@@ -44,8 +45,11 @@ module.exports = {
       },
       spacing: {
         '50':'12.5rem'
-      }
-    },
+      },
+      backgroundColor: {
+       clickme: 'rgba(165, 35, 170, 1)'
+      },
+    }, 
   },
   plugins: [],
 }
