@@ -15,35 +15,35 @@ const Resources_Data = [
     img: "/swc/flutter.png",
     description:
       " An open-source UI toolkit by Google for creating natively compiled applications across mobile, web, and desktop from a single codebase.",
-      link:"",
+      link:"https://www.notion.so/swciitg/Flutter-Workshop-2023-58e463347af34fb9be6f1d5dc06fb26e?pvs=4",
     },
   {
     name: "HTML, CSS, JavaScript",
     img: "/swc/html.png",
     description:
       "The foundational trinity of web development: HTML for structure, CSS for styling, and JavaScript for interactivity.",
-      link:"",
+      link:"https://swciitg.notion.site/Hackstack-Html-css-js-2023-27109c6b9f2b48a4ac5ecc7bde687570",
     },
   {
     name: "ReactJs",
     img: "/swc/react.png",
     description:
       " A JavaScript library by Facebook for building dynamic user interfaces, emphasizing component-based architecture and efficient rendering.",
-      link:"",
+      link:"https://swciitg.notion.site/React-js-Workshop-2023-HackStack-9e75bc6fa7664e45930074ad11cab317",
     },
   {
     name: "NodeJs",
     img: "/swc/node.png",
     description:
       " A server-side runtime for executing JavaScript, renowned for its non-blocking, event-driven architecture and scalability.",
-      link:"",
+      link:"https://swciitg.notion.site/Node-js-Workshop-2023-HackStack-268dcbe21f8b45fc9016320ddd10aa2f",
     },
   {
     name: "UI/IX",
     img: "/swc/figma.png",
     description:
       " UI (User Interface) focuses on design and the aesthetics of a product, while UX (User Experience) emphasizes its functionality and the overall experience of the user.",
-      link:"",
+      link:"https://www.notion.so/swciitg/54316871381e4f3abafaacf967e22d41?v=604ac080329c4adfab7a5ea4bb03890d&pvs=4",
     },
 ]
 
