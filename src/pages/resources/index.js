@@ -58,8 +58,8 @@ export default function Resources() {
         {/* ---Mapping to the data got from Data variable created above-- */}
         {/* ---Card made for different resources-- */}
 
-        {Resources_Data.map((item) => (
-          <div className=" --resources--card w-11/12 sm:w-10/12 md:w-9/12 xl:p-8 xl:pr-0 p-6 pr-0 justify-evenly flex m-4 rounded-3xl">
+        {Resources_Data.map((item,index) => (
+          <div className=" --resources--card w-11/12 sm:w-10/12 md:w-9/12 xl:p-8 xl:pr-0 p-6 pr-0 justify-evenly flex m-4 rounded-3xl" key={index}>
             <div><div className="text-white font-bold text-1xl md:text-2xl  mb-2">
               {item.name}
             </div>
@@ -68,6 +68,7 @@ export default function Resources() {
             </div>
             <a
               href={item.link}
+              target="_blank"
               className={`bg-clickme rounded-full pl-2 pr-2 pt-1 pb-1 lg:text-sm text-xs ${click_here.className}`}
             >
               Click here
