@@ -39,7 +39,7 @@ const Resources_Data = [
       link:"https://swciitg.notion.site/Node-js-Workshop-2023-HackStack-268dcbe21f8b45fc9016320ddd10aa2f",
     },
   {
-    name: "UI/IX",
+    name: "UI/UX",
     img: "/swc/figma.png",
     description:
       " UI (User Interface) focuses on design and the aesthetics of a product, while UX (User Experience) emphasizes its functionality and the overall experience of the user.",
