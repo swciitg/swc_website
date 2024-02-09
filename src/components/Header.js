@@ -12,7 +12,7 @@ export default function Header() {
         </div>
         <Link
           className="[text-decoration:none] relative flex flex-row p-2 items-center justify-start gap-[0.5rem] text-[inherit]"
-          href='/cards/apk/CollegeCupid_v1.0.6.apk' download={true}
+          href='/cards/apk/CollegeCupid_v1.0.7.apk' download={true}
           target="_blank"
           id="header"
         >

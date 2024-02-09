@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const LandingCard3 = () => { 
     return (
-        <Link  href='/cards/apk/CollegeCupid_v1.0.6.apk' download={true} className="group w-4/5 sm:w-3/4 md:w-full lg:w-full bg-gradient-45 from-gradgreendark to-gradgreenlight rounded-3xl overflow-hidden flex flex-col m-0 hover:opacity-50 transition-all duration-300 hover:cursor-pointer">
+        <Link  href='/cards/apk/CollegeCupid_v1.0.7.apk' download={true} className="group w-4/5 sm:w-3/4 md:w-full lg:w-full bg-gradient-45 from-gradgreendark to-gradgreenlight rounded-3xl overflow-hidden flex flex-col m-0 hover:opacity-50 transition-all duration-300 hover:cursor-pointer">
             <div className="  rounded-tl-xl shadow-lg shadow-cardimgshadow overflow-hidden">
             <Image src="/swc/College_Cupid.jpg" width={619} height={458}/>
             </div>
