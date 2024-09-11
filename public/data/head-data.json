@@ -1,74 +1,98 @@
 [
     {
       "id": 1,
-      "pfp": "/swc/Images/team_photos/kunal.png",
+      "pfp": "/swc/Images/team_photos/geet.png",
       "por": "General Secretary",
-      "name": "Kunal Pal",
-      "degree": "B.Tech, Civil",
-      "phno": "+91 7303744997"
+      "name": "Geetanjay Manik",
+      "degree": "B.Tech, ECE",
+      "phno": "+91 7027859553"
     },
     {
         "id": 2,
-        "pfp": "/swc/Images/team_photos/vighnesh.png",
+        "pfp": "/swc/Images/team_photos/ketan.png",
         "por": "Overall Coordinator",
-        "name": "Vighnesh Deshpande",
-        "degree": "B.Tech, ECE",
-        "phno": "+91 9819532497"
+        "name": "Ketan Singh",
+        "degree": "B.Tech, CSE",
+        "phno": "+91 9752708045"
     },
     {
         "id": 3,
-        "pfp": "/swc/Images/team_photos/sarthak.png",
+        "pfp": "/swc/Images/team_photos/dhanesh.png",
         "por": "Webmaster",
-        "name": "Sarthak Diwan",
-        "degree": "B.Tech, MnC",
-        "phno": "+91 7018236559"
+        "name": "Dhanesh V",
+        "degree": "B.Tech, CSE",
+        "phno": "+91 9444834694"
     },
     {
         "id": 4,
-        "pfp": "/swc/Images/team_photos/yashi.png",
+        "pfp": "/swc/Images/team_photos/deepak.png",
         "por": "Frontend Lead",
-        "name": "Yashi Natu",
+        "name": "Deepak Singh",
         "degree": "B.Tech, ECE",
         "phno": "+91 9752886479"
     },
     {
         "id": 5,
-        "pfp": "/swc/Images/team_photos/arpit.png",
+        "pfp": "/swc/Images/team_photos/siddhant.png",
         "por": "Backend Lead",
-        "name": "Arpit Sureka",
-        "degree": "B.Tech, Mechanical",
-        "phno": "+91 9737951693"
+        "name": "Siddhant Srivastava",
+        "degree": "B.Tech, Chemical",
+        "phno": "+91 9336402936"
     },
     {
         "id": 6,
-        "pfp": "/swc/Images/team_photos/hareesh.png",
+        "pfp": "/swc/Images/team_photos/hardik.png",
         "por": "App Lead",
-        "name": "Hareesh Nandigrama",
-        "degree": "B.Tech, CSE",
-        "phno": "+91 7780298361"
+        "name": "Hardik Roongta",
+        "degree": "B.Tech, ECE",
+        "phno": "+91 9783996255"
     },
     {
         "id": 7,
-        "pfp": "/swc/Images/team_photos/ayushi.png",
+        "pfp": "/swc/Images/team_photos/harsh.png",
         "por": "Design Lead",
-        "name": "Ayushi Anand",
-        "degree": "B.Tech, Mechanical",
-        "phno": "+91 7678948221"
+        "name": "Harsh Deep",
+        "degree": "B.Tech, Design",
+        "phno": "+91 9905040996"
     },
     {
         "id": 8,
-        "pfp": "/swc/Images/team_photos/chinmay.png",
+        "pfp": "/swc/Images/team_photos/sumeet.png",
         "por": "Design System Lead",
-        "name": "Chinmay Zinjal",
-        "degree": "B.Tech, Chemical",
-        "phno": "+91 7709595217"
+        "name": "Sumeet Deepak Ahire",
+        "degree": "B.Tech, BSBE",
+        "phno": "+91 9022801127"
     },
     {
         "id": 9,
-        "pfp": "/swc/Images/team_photos/aniruddha.png",
+        "pfp": "/swc/Images/team_photos/sanya.png",
         "por": "PM Lead",
-        "name": "Aniruddha Patil",
-        "degree": "B.Tech, Civil",
-        "phno": "+91 8669979900"
+        "name": "Sanya",
+        "degree": "B.Tech, BSBE",
+        "phno": "+91 9896056563"
+    },
+    {
+        "id": 10,
+        "pfp": "/swc/Images/team_photos/sathvik.png",
+        "por": "PM Lead",
+        "name": "Sathvik Dakappagari",
+        "degree": "B.Tech, ECE",
+        "phno": "+91 7330900570"
+    },
+    {
+        "id": 11,
+        "pfp": "/swc/Images/team_photos/ipsita.png",
+        "por": "PM Lead",
+        "name": "Ipsita Jain",
+        "degree": "B.Tech, ECE",
+        "phno": "+91 9460435689"
+    },
+    {
+        "id": 12,
+        "pfp": "/swc/Images/team_photos/arushi.png",
+        "por": "Operations Manager",
+        "name": "Arushi Kumar",
+        "degree": "B.Tech, DSAI",
+        "phno": "+91 9766706920"
     }
   ]

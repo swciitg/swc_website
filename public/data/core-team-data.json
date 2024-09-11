@@ -1,33 +1,23 @@
 [
     {
       "id": 1,
-      "pfp": "/swc/Images/team_photos/akshat.png",
-      "name": "Akshat Singhal"
+      "pfp": "/swc/Images/team_photos/ankit.png",
+      "name": "Ankit Gurwan"
     },
     {
         "id": 2,
-        "pfp": "/swc/Images/team_photos/ayush.png",
-        "name": "Ayush Datta Jaiswal"
+        "pfp": "/swc/Images/team_photos/ashutosh.png",
+        "name": "Ashutosh Kumar"
       },
 
     {
         "id": 3,
-        "pfp": "/swc/Images/team_photos/tarannum.png",
-        "name": "Tarannum"
+        "pfp": "/swc/Images/team_photos/piyush.png",
+        "name": "Piyush Tayal"
     },
     {
         "id": 4,
-        "pfp": "/swc/Images/team_photos/mohit.png",
-        "name": "Mohit Manoj"
-    },
-    {
-        "id": 5,
-        "pfp": "/swc/Images/team_photos/parshwa.png",
-        "name": "Parshva Shah"
-    },
-    {
-        "id": 6,
-        "pfp": "/swc/Images/team_photos/jitendra.png",
-        "name": "Jitendra Kr. Pandey"
+        "pfp": "/swc/Images/team_photos/dolina.png",
+        "name": "Dolina"
     }
   ]
