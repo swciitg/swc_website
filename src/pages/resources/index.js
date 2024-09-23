@@ -81,7 +81,7 @@ export default function Resources() {
               Click here
             </a></div>
             <div className="flex ml-2 mr-4 xl:ml-9  lg:ml-4 xl:mr-16 justify-center align-middle ">
-            <img className=" object-contain"  src={item.img} ></img>
+            <img className=" object-contain md:h-40"  src={item.img} ></img>
             </div>
           </div>
         ))}

@@ -67,7 +67,7 @@ export default function Team({coreTeamData, headData}) {
                   {idx%3===0 && <HeadInfoCard1 pfp={d.pfp} por={d.por} name={d.name} degree={d.degree} phno={d.phno}></HeadInfoCard1>}
                   {idx%3===1 && <HeadInfoCard2 pfp={d.pfp} por={d.por} name={d.name} degree={d.degree} phno={d.phno}></HeadInfoCard2>}
                   {idx%3===2 && <HeadInfoCard3 pfp={d.pfp} por={d.por} name={d.name} degree={d.degree} phno={d.phno}></HeadInfoCard3>}
-                  {idx<8 && <hr class="w-[60%] md:w-3/4 h-px ml-auto my-3 md:my-6 bg-white border-0 rounded"></hr>}
+                  {idx<11 && <hr class="w-[60%] md:w-3/4 h-px ml-auto my-3 md:my-6 bg-white border-0 rounded"></hr>}
                 </>
               );
             }
