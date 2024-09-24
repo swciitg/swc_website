@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }) {
   return (
     <main className='bg-black text-white'>
     <Component {...pageProps} />
-    <Header/>
+    {/* <Header/> */}
     <Navbar/>
     <Footer/>
     </main>
