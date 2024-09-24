@@ -15,8 +15,13 @@
         "pfp": "/swc/Images/team_photos/piyush.png",
         "name": "Piyush Tayal"
     },
-    {
+     {
         "id": 4,
+        "pfp": "/swc/Images/team_photos/swara.png",
+        "name": "Swara Chachad"
+    },
+    {
+        "id": 5,
         "pfp": "/swc/Images/team_photos/dolina.png",
         "name": "Dolina"
     }
