@@ -11,7 +11,7 @@ export default function Navbar() {
     // Total Navbar height is 9rem/9*16px and a dummy box of this height to be included in every index page to fit properly other elements
       //  Total max width of Navbar from SWC logo to last button - 68rem or 68*16px 
     
-    <div className="fixed top-[3rem] w-screen h-[9rem] text-left text-[1.25rem] text-white font-Inter bg-black">
+    <div className="fixed top-[0rem] w-screen h-[9rem] text-left text-[1.25rem] text-white font-Inter bg-black">
       <div className=" relative mx-auto mt-[0.5rem] md:mt-[2rem] h-auto flex md:flex-row flex-col justify-between items-top 
       xl:w-[68rem] lg:w-[48rem] md:w-[35rem]">
         
