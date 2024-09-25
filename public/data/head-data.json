@@ -29,7 +29,7 @@
         "por": "Frontend Lead",
         "name": "Deepak Singh",
         "degree": "B.Tech, ECE",
-        "phno": "+91 9752886479"
+        "phno": "+91 9910497239"
     },
     {
         "id": 5,
@@ -50,6 +50,7 @@
     {
         "id": 7,
         "pfp": "/swc/Images/team_photos/harsh1.png",
+
         "por": "Design Lead",
         "name": "Harsh Deep",
         "degree": "B.Tech, Design",
@@ -82,7 +83,7 @@
     {
         "id": 11,
         "pfp": "/swc/Images/team_photos/ipsita.png",
-        "por": "PM Lead",
+        "por": "Growth Lead",
         "name": "Ipsita Jain",
         "degree": "B.Tech, ECE",
         "phno": "+91 9460435689"
