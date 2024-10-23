@@ -1,0 +1,21 @@
+{
+  "name": "swc-website-backend",
+  "version": "1.0.0",
+  "description": "Simple backend for handling data on the SWC official website.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "SWC IITG",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "adminjs": "^7.8.13",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.2"
+  }
+}
