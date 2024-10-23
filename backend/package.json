@@ -1,8 +1,9 @@
 {
   "name": "swc-website-backend",
   "version": "1.0.0",
-  "description": "Simple backend for handling data on the SWC official website.",
+  "description": "Simple backend for handling variable data on the SWC official website.",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
