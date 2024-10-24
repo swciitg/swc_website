@@ -5,12 +5,15 @@ import mongoose from 'mongoose';
 import { errorHandler } from './middlewares/errorHandler.js';
 
 import router from './routers/index.js';
+import adminPanelRouter from './routers/adminRouter.js';
 
 dotenv.config()
 
 const app = express()
 
 mongoose.set("strictQuery", false);
+
+app.use(process.env.BASE_URL, adminPanelRouter)
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
