@@ -1,6 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
+import cors from 'cors'
 
 import { errorHandler } from './middlewares/errorHandler.js';
 
@@ -17,6 +18,7 @@ app.use(process.env.BASE_URL, adminPanelRouter)
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+app.use(cors())
 
 app.use((req, res, next) => {
     console.log(`${req.method} ${req.url}`);

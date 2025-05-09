@@ -12,7 +12,7 @@ import CardCarousel from './CardCarousel';
 
 
 const CarouselSlides = ({ExperienceData}) => {
-    const cardData = ExperienceData['experiences-card'];
+    const cardData = ExperienceData;
     const [_, setInit] = useState(); // To rerender incase of intitialisation as the Ref for button will be null
 
     const PrevButtonRef = useRef(null);
