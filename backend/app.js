@@ -20,6 +20,9 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 
+// static files from public folder on the base URL
+app.use(process.env.BASE_URL, express.static('public'))
+
 app.use((req, res, next) => {
     console.log(`${req.method} ${req.url}`);
     next();
