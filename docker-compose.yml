@@ -6,5 +6,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    env_file:
+      - .env
     ports:
       - '3020:3000'
+    restart: always # What to do if container crashes

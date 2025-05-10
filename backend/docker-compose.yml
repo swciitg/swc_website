@@ -1,0 +1,25 @@
+version: "3.3"
+services:
+  swc_website_backend:
+    image: swc_website_backend
+    container_name: swc_website_backend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    # volumes:
+    #   - ./uploads:/usr/src/app/backend/uploads
+
+    ports:
+      - "3789:3001"
+    env_file:
+      - .env
+    networks:
+      - backend_welfare-board-strapi
+
+
+networks:
+  backend_welfare-board-strapi:
+    external: true
