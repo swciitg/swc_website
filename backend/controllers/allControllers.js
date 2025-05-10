@@ -7,7 +7,7 @@ import LandingCard from "../models/landingCardsDataModel.js";
 export const getCoreTeam = async (req, res) => {
     try {
         const coreTeam = await CoreTeam.find();
-        res.status(200).json(coreTeam);
+        return res.status(200).json(coreTeam);
     } catch (error) {
         res.status(404).json({ message: error.message });
     }
@@ -25,7 +25,7 @@ export const getExperiencesCardData = async (req, res) => {
 export const getHeadData = async (req, res) => {
     try {
         const headData = await HeadData.find();
-        res.status(200).json(headData);
+        return res.status(200).json(headData);
     } catch (error) {
         res.status(404).json({ message: error.message });
     }

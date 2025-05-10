@@ -1,100 +1,86 @@
-{
-    "experiences-card":[
-        {
-            "id":1,
-            "ImgSrc":"./Images/team_photos/geet.png",
-            "Title":"Geetanjay Manik",
-            "Designation":"General Secretary",
-            "Content":"Learnt the skill of taking ideas and turning them into awesome products that surpass expectations."
-            
-        },
-        {
-            "id":2,
-            "ImgSrc":"./Images/team_photos/ketan.png",
-            "Title":"Ketan Singh",
-            "Designation":"Overall Coordinator",
-            "Content":"The team culture is amazing here and there's a lot to learn from SWC."
-            
-        },
-        {
-            "id":3,
-            "ImgSrc":"./Images/team_photos/dhanesh.png",
-            "Title":"Dhanesh V",
-            "Designation":"Webmaster",
-            "Content":"An amazing place to ideate and work upon sleeplessly to deliver products."
-            
-        },
-        {
-            "id":4,
-            "ImgSrc":"./Images/team_photos/deepak.png",
-            "Title":"Deepak Singh",
-            "Designation":"Frontend Lead",
-            "Content":"A great place to work with amazing team culture.and great projects."
-            
-        },
-        {
-            "id":5,
-            "ImgSrc":"./Images/team_photos/siddhant2.png",
-            "Title":"Siddhant Srivastava",
-            "Designation":"Backend Lead",
-            "Content":"Feels like working for something bigger and motivates for working harder."
-            
-        },
-        {
-            "id":6,
-            "ImgSrc":"./Images/team_photos/hardik.png",
-            "Title":"Hardik Roongta",
-            "Designation":"App Lead",
-            "Content":"Rewarding experience at SWC, contributing to the club's mission through innovation."
-            
-        },
-        {
-            "id":7,
-            "ImgSrc":"./Images/team_photos/harsh1.png",
-            "Title":"Harsh Deep",
-            "Designation":"Design Lead",
-            "Content":"A small journey from Product Designer to Design Lead, learning at each stage."
-            
-        },
-        {
-            "id":8,
-            "ImgSrc":"./Images/team_photos/sumeet.png",
-            "Title":"Sumeet Deepak Ahire",
-            "Designation":"Design System Lead",
-            "Content":"Working at SWC augmented my skills at great extent."
-            
-        },
-        {
-            "id":9,
-            "ImgSrc":"./Images/team_photos/sanya2.png",
-            "Title":"Sanya",
-            "Designation":"PM Lead",
-            "Content":"Successful product development at SWC as a customer-driven product manager."
-            
-        },
-        {
-            "id":10,
-            "ImgSrc":"./Images/team_photos/sathvik.png",
-            "Title":"Sathvik Dakappagari",
-            "Designation":"PM Lead",
-            "Content":"An Amazing team to work with fun and totally enjoyable."
-            
-        },
-        {
-            "id":11,
-            "ImgSrc":"./Images/team_photos/ipsita.png",
-            "Title":"Ipsita Jain",
-            "Designation":"Growth Lead",
-            "Content":"Amazing Team and amazing experiences, learnt a lot working here at SWC!"
-            
-        },
-        {
-            "id":12,
-            "ImgSrc":"./Images/team_photos/arushi.png",
-            "Title":"Arushi Kumar",
-            "Designation":"Operations Manager",
-            "Content":"Provided me with the opportunity to work on challenging projects and learn new technologies."
-            
-        }
-    ]
-}
+[
+    {
+        "id": 1,
+        "ImgSrc": "./Images/team_photos/geet.png",
+        "Title": "Geetanjay Manik",
+        "Designation": "General Secretary",
+        "Content": "Learnt the skill of taking ideas and turning them into awesome products that surpass expectations."
+    },
+    {
+        "id": 2,
+        "ImgSrc": "./Images/team_photos/ketan.png",
+        "Title": "Ketan Singh",
+        "Designation": "Overall Coordinator",
+        "Content": "The team culture is amazing here and there's a lot to learn from SWC."
+    },
+    {
+        "id": 3,
+        "ImgSrc": "./Images/team_photos/dhanesh.png",
+        "Title": "Dhanesh V",
+        "Designation": "Webmaster",
+        "Content": "An amazing place to ideate and work upon sleeplessly to deliver products."
+    },
+    {
+        "id": 4,
+        "ImgSrc": "./Images/team_photos/deepak.png",
+        "Title": "Deepak Singh",
+        "Designation": "Frontend Lead",
+        "Content": "A great place to work with amazing team culture.and great projects."
+    },
+    {
+        "id": 5,
+        "ImgSrc": "./Images/team_photos/siddhant2.png",
+        "Title": "Siddhant Srivastava",
+        "Designation": "Backend Lead",
+        "Content": "Feels like working for something bigger and motivates for working harder."
+    },
+    {
+        "id": 6,
+        "ImgSrc": "./Images/team_photos/hardik.png",
+        "Title": "Hardik Roongta",
+        "Designation": "App Lead",
+        "Content": "Rewarding experience at SWC, contributing to the club's mission through innovation."
+    },
+    {
+        "id": 7,
+        "ImgSrc": "./Images/team_photos/harsh1.png",
+        "Title": "Harsh Deep",
+        "Designation": "Design Lead",
+        "Content": "A small journey from Product Designer to Design Lead, learning at each stage."
+    },
+    {
+        "id": 8,
+        "ImgSrc": "./Images/team_photos/sumeet.png",
+        "Title": "Sumeet Deepak Ahire",
+        "Designation": "Design System Lead",
+        "Content": "Working at SWC augmented my skills at great extent."
+    },
+    {
+        "id": 9,
+        "ImgSrc": "./Images/team_photos/sanya2.png",
+        "Title": "Sanya",
+        "Designation": "PM Lead",
+        "Content": "Successful product development at SWC as a customer-driven product manager."
+    },
+    {
+        "id": 10,
+        "ImgSrc": "./Images/team_photos/sathvik.png",
+        "Title": "Sathvik Dakappagari",
+        "Designation": "PM Lead",
+        "Content": "An Amazing team to work with fun and totally enjoyable."
+    },
+    {
+        "id": 11,
+        "ImgSrc": "./Images/team_photos/ipsita.png",
+        "Title": "Ipsita Jain",
+        "Designation": "Growth Lead",
+        "Content": "Amazing Team and amazing experiences, learnt a lot working here at SWC!"
+    },
+    {
+        "id": 12,
+        "ImgSrc": "./Images/team_photos/arushi.png",
+        "Title": "Arushi Kumar",
+        "Designation": "Operations Manager",
+        "Content": "Provided me with the opportunity to work on challenging projects and learn new technologies."
+    }
+]
