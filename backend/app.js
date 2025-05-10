@@ -29,7 +29,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// app.use(process.env.BASE_URL, router)
+app.use("", router)
 app.use("/", (req, res) => {
   res.send("Welcome to the Home Page!");
 });
