@@ -5,6 +5,7 @@ import HiringCard from "../models/hiringCardsDataModel.js";
 import LandingCard from "../models/landingCardsDataModel.js";
 
 export const getCoreTeam = async (req, res) => {
+    console.log("Fetching core team data");
     try {
         const coreTeam = await CoreTeam.find();
         return res.status(200).json(coreTeam);
