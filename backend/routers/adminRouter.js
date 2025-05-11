@@ -4,6 +4,6 @@ import { adminRouter } from '../admin_panel/admin-config.js';
 
 const adminPanelRouter = express.Router();
 
-adminPanelRouter.use('/admin', adminRouter);
+adminPanelRouter.use('/', adminRouter);
 
 export default adminPanelRouter;

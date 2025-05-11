@@ -12,7 +12,7 @@ import HeadData from "../models/headDataModel.js";
 import HiringCard from "../models/hiringCardsDataModel.js";
 import LandingCard from "../models/landingCardsDataModel.js";
 
-const ADMINPANELROOT = process.env.BASE_URL + "/admin";
+const ADMINPANELROOT =  "/swc_website/api/admin";
 
 const DEFAULT_ADMIN = {
   email: process.env.ADMIN_PANEL_EMAIL,
