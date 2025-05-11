@@ -15,7 +15,7 @@ const app = express();
 
 mongoose.set("strictQuery", false);
 
-app.use("/admin", adminRouter);
+app.use("/swc_website/api/admin", adminRouter);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

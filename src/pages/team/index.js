@@ -20,9 +20,8 @@ export default function Team({ }) {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get(`${baseUrl}/api/coreTeam`);        setCoreTeamData(response.data);
-
-        const response2 = await axios.get(`${baseUrl}/api/headData`);
+        const response = await axios.get(`${baseUrl}/coreTeam`);        setCoreTeamData(response.data);
+        const response2 = await axios.get(`${baseUrl}/headData`);
         setHeadData(response2.data);
       } catch (error) {
         console.error('Error fetching data:', error);
