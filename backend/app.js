@@ -6,7 +6,6 @@ import cors from "cors";
 import { errorHandler } from "./middlewares/errorHandler.js";
 
 import router from "./routers/index.js";
-import adminPanelRouter from "./routers/adminRouter.js";
 import { adminRouter } from "./admin_panel/admin-config.js";
 
 dotenv.config();
@@ -15,7 +14,8 @@ const app = express();
 
 mongoose.set("strictQuery", false);
 
-app.use("/admin", adminRouter);
+const adminURL = process.env.BASE_URL + "/admin";
+app.use(adminURL, adminRouter);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -29,10 +29,8 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use("", router)
-app.use("/", (req, res) => {
-  res.send("Welcome to the Home Page!");
-});
+app.use(process.env.BASE_URL, router);
+
 app.use("*",(req,res) => {
     // throw new Error("Route not found")
     console.log('Route not found')

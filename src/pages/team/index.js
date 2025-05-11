@@ -1,3 +1,4 @@
+'use client'
 import { Inter } from 'next/font/google'
 import { getCoreTeamData } from '../../../lib/coreTeamData'
 import { getHeadData } from '../../../lib/headData'
@@ -7,19 +8,30 @@ import HeadInfoCard3 from '@/components/HeadInfoCard3'
 import CoreTeamCard1 from '@/components/CoreTeamCard1'
 import CoreTeamCard2 from '@/components/CoreTeamCard2'
 import CoreTeamCard3 from '@/components/CoreTeamCard3'
+import axios from 'axios'
+import { useEffect, useState } from 'react'
+
+const backend_url = process.env.BACKEND_BASE_URL || 'http://localhost:8011/swc_website/api';
 const inter = Inter({ subsets: ['latin'] })
 
-export async function getStaticProps() {
-  const coreTeamData = await getCoreTeamData()
-  const headData = await getHeadData()
-  
-  return {
-    props: { coreTeamData, headData }
-  }
+export default function Team({ }) {
+  const [coreTeamData, setCoreTeamData] = useState([]);
+  const [headData, setHeadData] = useState([]);
 
-}
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await axios.get(`${backend_url}/coreTeam`);
+        setCoreTeamData(response.data);
+        const response2 = await axios.get(`${backend_url}/headData`);
+        setHeadData(response2.data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    }
+    fetchData();
+  }, []);
 
-export default function Team({ coreTeamData, headData }) {
   return (
     <>
       {/* this dummy div is for adjusting top position Must be included in every index file-- 3rem for Header and 9rem for Navbar*/}
