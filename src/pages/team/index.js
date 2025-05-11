@@ -10,7 +10,8 @@ import CoreTeamCard2 from '@/components/CoreTeamCard2'
 import CoreTeamCard3 from '@/components/CoreTeamCard3'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-const baseUrl = process.env.NEXT_PUBLIC_BACKEND_BASE_URL;
+
+const backend_url = process.env.BACKEND_BASE_URL || 'http://localhost:8011/swc_website/api';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Team({ }) {
@@ -20,8 +21,9 @@ export default function Team({ }) {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get(`${baseUrl}/coreTeam`);        setCoreTeamData(response.data);
-        const response2 = await axios.get(`${baseUrl}/headData`);
+        const response = await axios.get(`${backend_url}/coreTeam`);
+        setCoreTeamData(response.data);
+        const response2 = await axios.get(`${backend_url}/headData`);
         setHeadData(response2.data);
       } catch (error) {
         console.error('Error fetching data:', error);
