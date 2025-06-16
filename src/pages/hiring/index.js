@@ -12,6 +12,7 @@ export async function getStaticProps() {
   const ExperienceData = await getExperienceData()
 
   return {
+    notFound: true, // 404 not found
     props: { hiringCardData, ExperienceData }
   }
 }
