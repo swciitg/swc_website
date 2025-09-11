@@ -31,7 +31,7 @@ export default function Navbar() {
 
           {/* NAVBAR */}
 
-          <div className="rounded-3xl shrink-0 bg-[#1C1C1C] w-[22rem] sm:w-[22rem]  h-[2rem] sm:h-[4rem] md:mx-0 mx-auto overflow-hidden flex flex-row py-[1.5rem] px-[2rem] box-border items-center justify-center text-[1rem] text-[inherit]">
+          <div className="rounded-3xl shrink-0 bg-[#1C1C1C] w-auto h-[3rem] sm:h-[4rem] px-6 flex flex-row items-center justify-center gap-6">
             <div className="flex flex-row items-center justify-center gap-[1rem]">
               <div className=" h-[1.25rem] flex flex-col items-center justify-start gap-[0.25rem] text-[inherit]">
                 <Link href='/'className="relative text-sm leading-[1.3rem] text-[#777777] hover:text-white font-semibold">Home</Link>
@@ -47,12 +47,12 @@ export default function Navbar() {
               <Link href='/team'className="[text-decoration:none] relative text-sm  leading-[1.3rem] font-semibold  text-[#777777] hover:text-white">
                 Team
               </Link>
-              {/* <div className=" flex flex-row items-center justify-start text-[0.88rem]">
-                <div className=" bg-[#A523AA] rounded-2xl h-[2rem] flex flex-row py-[0.25rem] px-[0.75rem]  items-center justify-center">
-                  <Link href='/hiring' className=" text-white font-serif text-[0.4rem] md:text-[0.65rem] text-center">We Are Hiring!
+              <div className=" flex flex-row items-center justify-start text-[0.88rem]">
+                <div className="bg-[#A523AA] rounded-2xl h-[2rem] flex flex-row px-3 items-center justify-center">
+                  <Link href='/hiring' className=" text-white text-xs md:text-sm text-center whitespace-nowrap">We Are Hiring!
                   </Link> 
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
 

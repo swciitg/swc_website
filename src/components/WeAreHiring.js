@@ -21,7 +21,7 @@ export default function WeAreHiring(props) {
                         </div>
                     </div>
                     <div className='text-xl text-cyan-500 ml-12 font-[Inter] hover:text-cyan-400'>
-                        <a href='https://forms.office.com/r/X4mxHugR6X'>Link to Apply &#8594;</a>
+                        <a href='https://forms.gle/FxEGsChpGrc34CPD6'>Link to Apply &#8594;</a>
                     </div>
                 </div>
 

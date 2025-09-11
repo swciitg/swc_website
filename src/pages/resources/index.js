@@ -15,42 +15,49 @@ const Resources_Data = [
     img: "/swc/flutter.png",
     description:
       " An open-source UI toolkit by Google for creating natively compiled applications across mobile, web, and desktop from a single codebase.",
-      link:"https://swciitg.notion.site/Flutter-Hackstack-2024-6274025e81d64ac591a38e1ccc034b81?pvs=25",
+      link:"https://linktr.ee/HackStackflutter",
     },
   {
     name: "HTML, CSS, JavaScript",
     img: "/swc/html.png",
     description:
       "The foundational trinity of web development: HTML for structure, CSS for styling, and JavaScript for interactivity.",
-      link:"https://swciitg.notion.site/HackStack-24-HTML-CSS-JavaScript-036b384a13cf4e90a3c786071c3abf31?pvs=25",
+      link:"https://tinyurl.com/hackstack-25",
     },
   {
     name: "ReactJs",
     img: "/swc/react.png",
     description:
       " A JavaScript library by Facebook for building dynamic user interfaces, emphasizing component-based architecture and efficient rendering.",
-      link:"https://swciitg.notion.site/React-Hackstack-2024-b4fee56832de4347aad9c6f182a642cb?pvs=25",
+      link:"https://sun-suggestion-564.notion.site/HeackStack25-ReactWorkShop-1f90dde15273803caba1dd6e438ae039?source=copy_link",
     },
   {
     name: "NodeJs",
     img: "/swc/node.png",
     description:
       " A server-side runtime for executing JavaScript, renowned for its non-blocking, event-driven architecture and scalability.",
-      link:"https://swciitg.notion.site/Node-js-Workshop-2024-299346a043124e8f861afe067cdec323?pvs=25",
+      link:"https://www.notion.so/Node-js-Workshop-2025-1f979e7e67d380f7a12cd987fd73de0b?source=copy_link",
     },
   {
       name: "Django",
       img: "/swc/django.png",
       description:
         " A high-level Python web framework, renowned for its rapid development, built-in features, and scalability.",
-        link:"https://swciitg.notion.site/Django-Hackstack-2024-8f4115ccfbf44bcd9b7898c7c0c75550?pvs=25",
+        link:"https://sprinkle-curio-a28.notion.site/Django-HackStack-2025-21443139e33d8028b76ec806e164f1bc",
     },
   {
     name: "UI/UX",
     img: "/swc/figma.png",
     description:
       " UI (User Interface) focuses on design and the aesthetics of a product, while UX (User Experience) emphasizes its functionality and the overall experience of the user.",
-      link:"https://swciitg.notion.site/UI-UX-Workshop-a4acd98e599946fa8c5ee1f478dba276?pvs=25",
+      link:"https://obvious-subway-33b.notion.site/Hackstack-UI-UX-Workshop-20cf46435438803082bbe5e37d603da8?source=copy_link",
+    },
+  {
+    name: "Viscom",
+    img: "/swc/viscom.svg",
+    description:
+      " The art of crafting visual narratives through images, metaphors, and design — focused on clarity, storytelling, and intent.",
+      link:"https://screeching-belief-78d.notion.site/Visual-Communication-Design-1b36678d35d6806cb4a8db788c0cbb57",
     },
 ]
 
