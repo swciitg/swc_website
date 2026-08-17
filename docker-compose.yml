@@ -8,6 +8,13 @@ services:
       dockerfile: Dockerfile
     env_file:
       - .env
+    environment:
+      # Overrides env_file: the .env line "BACKEND_BASE_URL = '...'" has spaces
+      # around the '=', which Docker Compose's env_file parser doesn't strip,
+      # so it never actually sets BACKEND_BASE_URL (it registers a key with a
+      # trailing space instead). Setting it explicitly here guarantees the
+      # app gets the correct value regardless of .env's contents/formatting.
+      - BACKEND_BASE_URL=https://swc.iitg.ac.in/swc_website/api
     ports:
       - '3020:3000'
     restart: always # What to do if container crashes

@@ -1,55 +1,23 @@
 import HallOfFameCard from '@/components/HallOfFameCard'
 import axios from 'axios'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Head from 'next/head'
 
-// TEMP DIAGNOSTIC BUILD - remove the debug prop + useEffect below once the
-// SSR fetch issue is confirmed and fixed.
 export async function getServerSideProps() {
   const rawBase = (process.env.BACKEND_BASE_URL || 'http://localhost:8011/swc_website/api').replace(/\/+$/, '');
   const backend_url = rawBase.endsWith('/api') ? rawBase : `${rawBase}/api`;
-  const requestUrl = `${backend_url}/hallOfFame`;
   try {
-    const response = await axios.get(requestUrl, { timeout: 8000 });
-    return {
-      props: {
-        initialData: response.data,
-        debug: {
-          ok: true,
-          requestUrl,
-          envValue: process.env.BACKEND_BASE_URL || null,
-          dataLength: Array.isArray(response.data) ? response.data.length : null,
-        },
-      },
-    };
+    const response = await axios.get(`${backend_url}/hallOfFame`);
+    return { props: { initialData: response.data } };
   } catch (error) {
-    return {
-      props: {
-        initialData: [],
-        debug: {
-          ok: false,
-          requestUrl,
-          envValue: process.env.BACKEND_BASE_URL || null,
-          message: error.message,
-          code: error.code || null,
-          responseStatus: error.response ? error.response.status : null,
-          responseData: error.response ? error.response.data : null,
-        },
-      },
-    };
+    console.error('Error fetching hall of fame data:', error.message);
+    return { props: { initialData: [] } };
   }
 }
 
-export default function HallOfFame({ initialData, debug }) {
+export default function HallOfFame({ initialData }) {
   const data = initialData;
-
-  useEffect(() => {
-    if (debug) {
-      // eslint-disable-next-line no-console
-      console.log('[HallOfFame SSR debug]', debug);
-    }
-  }, [debug]);
 
   // Extract unique years sorted descending
   const years = [...new Set(data.map(item => item.year))].sort((a, b) => b.localeCompare(a));
