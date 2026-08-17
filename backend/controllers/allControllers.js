@@ -3,6 +3,7 @@ import ExperiencesCard from "../models/experiencesCardDataModel.js";
 import HeadData from "../models/headDataModel.js";
 import HiringCard from "../models/hiringCardsDataModel.js";
 import LandingCard from "../models/landingCardsDataModel.js";
+import HallOfFame from "../models/hallOfFameModel.js";
 
 export const getCoreTeam = async (req, res) => {
     try {
@@ -44,6 +45,15 @@ export const getLandingCardsData = async (req, res) => {
     try {
         const landingCard = await LandingCard.find();
         res.status(200).json(landingCard);
+    } catch (error) {
+        res.status(404).json({ message: error.message });
+    }
+}
+
+export const getHallOfFame = async (req, res) => {
+    try {
+        const hallOfFame = await HallOfFame.find().sort({ year: -1 });
+        res.status(200).json(hallOfFame);
     } catch (error) {
         res.status(404).json({ message: error.message });
     }

@@ -1,5 +1,5 @@
 import express from 'express';
-import { getCoreTeam, getExperiencesCardData, getHeadData, getHiringCardsData, getLandingCardsData } from '../controllers/allControllers.js';
+import { getCoreTeam, getExperiencesCardData, getHeadData, getHiringCardsData, getLandingCardsData, getHallOfFame } from '../controllers/allControllers.js';
 
 const router = express.Router();
 
@@ -8,5 +8,6 @@ router.get('/experiencesCardData', getExperiencesCardData);
 router.get('/headData', getHeadData);
 router.get('/hiringCardsData', getHiringCardsData);
 router.get('/landingCardsData', getLandingCardsData);
+router.get('/hallOfFame', getHallOfFame);
 
 export default router;

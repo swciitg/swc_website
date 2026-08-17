@@ -11,6 +11,7 @@ import ExperiencesCard from "../models/experiencesCardDataModel.js";
 import HeadData from "../models/headDataModel.js";
 import HiringCard from "../models/hiringCardsDataModel.js";
 import LandingCard from "../models/landingCardsDataModel.js";
+import HallOfFame from "../models/hallOfFameModel.js";
 
 const ADMINPANELROOT =  "/swc_website/api/admin";
 
@@ -39,7 +40,8 @@ const adminOptions = {
     ExperiencesCard,
     HeadData,
     HiringCard,
-    LandingCard
+    LandingCard,
+    HallOfFame
   ],
   rootPath: ADMINPANELROOT,
   loginPath: ADMINPANELROOT + "/login",

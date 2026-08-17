@@ -27,6 +27,7 @@ const Footer = () => {
                         <Link href="/team" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Team</Link>
                         <Link href="/products" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Products</Link>
                         <Link href="/hiring" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Apply Now!</Link>
+                        <Link href="/hall-of-fame" className="flex text-greyuse sm:text-sm text-xs font-normal leading-6 hover:underline">Hall of Fame</Link>
                     </div>
                    
                     <div className="flex flex-col">
