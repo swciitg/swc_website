@@ -5,7 +5,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Head from 'next/head'
 
 export async function getServerSideProps() {
-  const backend_url = process.env.BACKEND_BASE_URL || 'http://localhost:8011/swc_website/api';
+  const rawBase = (process.env.BACKEND_BASE_URL || 'http://localhost:8011/swc_website/api').replace(/\/+$/, '');
+  const backend_url = rawBase.endsWith('/api') ? rawBase : `${rawBase}/api`;
   try {
     const response = await axios.get(`${backend_url}/hallOfFame`);
     return { props: { initialData: response.data } };
