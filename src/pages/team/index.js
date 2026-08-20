@@ -1,4 +1,4 @@
-'use client'
+import Seo from '@/components/Seo'
 import { Inter } from 'next/font/google'
 import { getCoreTeamData } from '../../../lib/coreTeamData'
 import { getHeadData } from '../../../lib/headData'
@@ -8,32 +8,39 @@ import HeadInfoCard3 from '@/components/HeadInfoCard3'
 import CoreTeamCard1 from '@/components/CoreTeamCard1'
 import CoreTeamCard2 from '@/components/CoreTeamCard2'
 import CoreTeamCard3 from '@/components/CoreTeamCard3'
-import axios from 'axios'
-import { useEffect, useState } from 'react'
 
-const backend_url = process.env.BACKEND_BASE_URL || 'http://localhost:8011/swc_website/api';
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Team({ }) {
-  const [coreTeamData, setCoreTeamData] = useState([]);
-  const [headData, setHeadData] = useState([]);
+/*
+ * Fetched on the server rather than in a useEffect for two reasons.
+ *
+ * Correctness: BACKEND_BASE_URL has no NEXT_PUBLIC_ prefix, so Next does not
+ * expose it to the browser bundle. The old client side fetch therefore fell
+ * back to the localhost default in production and always failed, leaving the
+ * page empty. Reading it here, on the server, is where the variable exists.
+ *
+ * Crawlability: rendering the team into the HTML means search engines and AI
+ * crawlers can read it without executing JavaScript.
+ *
+ * getCoreTeamData and getHeadData already swallow errors and return [], so a
+ * backend that is down degrades to an empty page instead of failing the build.
+ */
+export async function getStaticProps() {
+  const [coreTeamData, headData] = await Promise.all([
+    getCoreTeamData(),
+    getHeadData(),
+  ])
 
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await axios.get(`${backend_url}/coreTeam`);
-        setCoreTeamData(response.data);
-        const response2 = await axios.get(`${backend_url}/headData`);
-        setHeadData(response2.data);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    }
-    fetchData();
-  }, []);
+  return {
+    props: { coreTeamData, headData },
+    revalidate: 3600, // refresh hourly without a redeploy
+  }
+}
 
+export default function Team({ coreTeamData = [], headData = [] }) {
   return (
     <>
+      <Seo path="/team" />
       {/* this dummy div is for adjusting top position Must be included in every index file-- 3rem for Header and 9rem for Navbar*/}
       <div className='bg-black h-[12rem] w-full'></div>
       <div className='text-white font-black bg-black mx-auto text-[3rem] sm:text-[4rem] text-center'>Our Team</div>
