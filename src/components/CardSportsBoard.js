@@ -5,7 +5,7 @@ export default function CardSportsBoard() {
       {/* card Component*/}
       <div className='flex flex-col relative w-[21rem] h-[25rem] sm:w-[28rem] sm:h-[32rem] rounded-3xl flex-initial m-0'>
         {/* Image part of Card */}
-        <div className='h-[60%] sm:h-[65%] bg-[url(/cards/sportsBoard.png)] bg-cover rounded-t-3xl'></div>
+        <div className='h-[60%] sm:h-[65%] bg-[url(/swc/cards/sportsBoard.png)] bg-cover rounded-t-3xl'></div>
         {/* Footer part of Card */}
         <div className=' bg-[#0D2368] overflow-hidden w-full h-fit rounded-b-3xl px-[1rem]'>
           <div>
