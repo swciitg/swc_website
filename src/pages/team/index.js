@@ -9,6 +9,7 @@ import CoreTeamCard1 from '@/components/CoreTeamCard1'
 import CoreTeamCard2 from '@/components/CoreTeamCard2'
 import CoreTeamCard3 from '@/components/CoreTeamCard3'
 
+const backend_url = process.env.NEXT_PUBLIC_BACKEND_BASE_URL || 'http://localhost:8011/swc_website/api';
 const inter = Inter({ subsets: ['latin'] })
 
 /*
