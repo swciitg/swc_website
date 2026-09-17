@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Seo from '@/components/Seo'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import CardSwcJourney from '../../components/CardSwcJourney'
@@ -16,26 +16,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Products({ExperienceData}) {
   return (
     <>
-    <Head>
-      <title>Our Products - Students&#39; Web Committee</title>
-      <meta name="description" content="Explore the digital products built by Students Web Committee at IIT Guwahati, including election portals, placement stats, and campus board websites." />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href="/favicon.ico" />
-
-      {/* Open Graph */}
-      <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="Students' Web Committee" />
-      <meta property="og:title" content="Our Products - Students' Web Committee" />
-      <meta property="og:description" content="Digital products built by Students Web Committee at IIT Guwahati for campus life." />
-      <meta property="og:image" content="https://swc.iitg.ac.in/og-image.png" />
-      <meta property="og:url" content="https://swc.iitg.ac.in/products" />
-
-      {/* Twitter / X */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Our Products - Students' Web Committee" />
-      <meta name="twitter:description" content="Digital products built by Students Web Committee at IIT Guwahati for campus life." />
-      <meta name="twitter:image" content="https://swc.iitg.ac.in/og-image.png" />
-    </Head>
+    <Seo path="/products" />
     {/* this dummy div is for adjusting top position Must be included in every index file-- 3rem for Header and 9rem for Navbar*/}
     <div className='bg-black h-[12rem] w-full'></div>
     <div className="flex flex-col h-fit w-[90%] overflow-hidden sm:w-full sm:items-center mx-auto">
