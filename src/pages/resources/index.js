@@ -1,3 +1,4 @@
+import Seo from "@/components/Seo";
 import { Inter } from "next/font/google";
 import { Abril_Fatface } from "next/font/google";
 const click_here = Abril_Fatface({ subsets: ["latin"], weight: ["400"] });
@@ -57,6 +58,7 @@ const Resources_Data = [
 export default function Resources() {
   return (
     <>
+      <Seo path="/resources" />
       <div className=" grid justify-center justify-items-center  items-center ">
         <div className=" text-5xl md:text-6xl  mt-56 mb-16 text-opacity-100 text-white font-bold">
           Resources

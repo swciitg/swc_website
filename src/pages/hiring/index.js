@@ -20,7 +20,7 @@ export async function getStaticProps() {
 export default function Home({ExperienceData,hiringCardData}) {
 // console.log(cardData)
   return (
-    <> 
+    <>
     <div className='h-[12rem] w-full'> </div>
 
     <div>

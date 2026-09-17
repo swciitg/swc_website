@@ -1,0 +1,11 @@
+# https://www.robotstxt.org/robotstxt.html
+#
+# Served at https://swc.iitg.ac.in/swc/robots.txt because next.config.js sets
+# basePath '/swc'. Crawlers only read the file at the domain root, so this copy
+# is documentation. The authoritative file has to be served by nginx at
+# https://swc.iitg.ac.in/robots.txt and should list every sitemap on the host.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://swc.iitg.ac.in/swc/sitemap.xml
