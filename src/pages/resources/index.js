@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { Inter } from "next/font/google";
 import { Abril_Fatface } from "next/font/google";
 const click_here = Abril_Fatface({ subsets: ["latin"], weight: ["400"] });
@@ -57,6 +58,26 @@ const Resources_Data = [
 export default function Resources() {
   return (
     <>
+      <Head>
+        <title>Resources - Students&#39; Web Committee</title>
+        <meta name="description" content="Free web development resources and workshop materials from Students Web Committee at IIT Guwahati, covering React, Flutter, HTML, CSS, JavaScript, and more." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Students' Web Committee" />
+        <meta property="og:title" content="Resources - Students' Web Committee" />
+        <meta property="og:description" content="Web development resources and workshop materials from Students Web Committee, IIT Guwahati." />
+        <meta property="og:image" content="https://swc.iitg.ac.in/og-image.png" />
+        <meta property="og:url" content="https://swc.iitg.ac.in/resources" />
+
+        {/* Twitter / X */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Resources - Students' Web Committee" />
+        <meta name="twitter:description" content="Web development resources and workshop materials from Students Web Committee, IIT Guwahati." />
+        <meta name="twitter:image" content="https://swc.iitg.ac.in/og-image.png" />
+      </Head>
       <div className=" grid justify-center justify-items-center  items-center ">
         <div className=" text-5xl md:text-6xl  mt-56 mb-16 text-opacity-100 text-white font-bold">
           Resources
