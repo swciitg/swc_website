@@ -11,7 +11,7 @@ import CoreTeamCard3 from '@/components/CoreTeamCard3'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
-const backend_url = process.env.BACKEND_BASE_URL || 'http://localhost:8011/swc_website/api';
+const backend_url = process.env.NEXT_PUBLIC_BACKEND_BASE_URL || 'http://localhost:8011/swc_website/api';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Team({ }) {
