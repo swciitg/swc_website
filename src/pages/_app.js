@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }) {
       <main className={`${inter.variable} ${jetbrains.variable} ${garamond.variable} bg-black text-white`}>
         <Nav />
         <Component {...pageProps} />
-        <SiteFooter headline={Component.footerHeadline} />
+        <SiteFooter />
       </main>
     </LazyMotion>
   )

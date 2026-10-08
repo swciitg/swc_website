@@ -30,6 +30,3 @@ export default function Home({ counts, teamSession, teamAvatars, leaderAvatars, 
     </Page>
   )
 }
-
-// The partner section above already asks "Got a product?", so the footer closes on a different line here.
-Home.footerHeadline = ['Have an idea?', "Let's ship it"]

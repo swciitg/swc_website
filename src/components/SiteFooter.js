@@ -4,8 +4,6 @@ import { Accent } from '@/components/ui/SectionHeader'
 import { DOT_COLORS } from '@/components/ui/Chip'
 import { CONTACT, FOOTER_COLUMNS, MAILTO, PROJECT_MAILTO, SOCIALS } from '@/data/site'
 
-const DEFAULT_HEADLINE = ['Got a product?', "Let's build it"]
-
 const LINK = 'whitespace-nowrap font-ui text-[15px] leading-[18px] text-mist transition-colors duration-200 hover:text-text'
 
 function Column({ title, color, children }) {
@@ -55,7 +53,7 @@ function SocialPill({ social }) {
 }
 
 /** Footer C2: dark partner band, tricolor stripes with a teal glow, colour-coded columns, social links, teal bar. */
-export default function SiteFooter({ headline = DEFAULT_HEADLINE }) {
+export default function SiteFooter() {
   const year = new Date().getFullYear()
 
   return (
@@ -64,9 +62,9 @@ export default function SiteFooter({ headline = DEFAULT_HEADLINE }) {
         <div className="relative z-10 flex flex-col items-start gap-5 px-5 pt-10 sm:gap-6 sm:px-10 sm:pt-12 lg:absolute lg:left-24 lg:top-12 lg:p-0">
           <p className="font-code text-[12px] uppercase leading-4 tracking-[0.06em] text-teal">$ swc collaborate --org=yours</p>
           <h2 className="font-ui text-[32px] font-semibold leading-[1.08] tracking-[-0.04em] text-text sm:text-[52px] sm:leading-[56px]">
-            {headline[0]}
+            Got a product?
             <br />
-            {headline[1]} <Accent>together.</Accent>
+            Let&apos;s build it <Accent>together.</Accent>
           </h2>
           <p className="max-w-[470px] font-ui text-[17px] leading-[26px] text-mist">
             Clubs, boards, startups and companies: bring us the idea. We design, build and ship it with you.
