@@ -17,7 +17,8 @@ async function fetchList(endpoint) {
     const res = await fetch(`${base}/${endpoint}`, { signal: AbortSignal.timeout(8000) })
     if (!res.ok) return null
     const data = await res.json()
-    return Array.isArray(data) && data.length > 0 ? data : null
+    // An empty list is a real answer (everyone was removed); only a failed request falls back to the snapshot.
+    return Array.isArray(data) ? data : null
   } catch {
     return null
   }

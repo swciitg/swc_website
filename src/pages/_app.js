@@ -16,11 +16,11 @@ const loadMotion = () => import('@/lib/motionFeatures').then((module) => module.
 export default function App({ Component, pageProps }) {
   return (
     <LazyMotion features={loadMotion}>
-      <main className={`${inter.variable} ${jetbrains.variable} ${garamond.variable} bg-black text-white`}>
+      <div className={`${inter.variable} ${jetbrains.variable} ${garamond.variable} bg-black text-white`}>
         <Nav />
         <Component {...pageProps} />
         <SiteFooter />
-      </main>
+      </div>
     </LazyMotion>
   )
 }

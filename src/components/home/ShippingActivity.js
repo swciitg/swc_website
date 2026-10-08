@@ -8,8 +8,11 @@ import { GITHUB_URL } from '@/data/site'
 const CELL = 18
 const GAP = 4
 const STEP = CELL + GAP
-// Phones show only the most recent weeks, which fit without scrolling.
+// Phones show only the most recent weeks. Cells are 18px, shrinking on narrower phones so the
+// twelve columns, their eleven gaps and the day labels (82px in all) always fit the card.
 const MOBILE_WEEKS = 12
+const CELL_SIZE = '[--cell:min(18px,calc((100cqw_-_82px)/12))] sm:[--cell:18px]'
+const CELL_BOX = 'h-[var(--cell)] w-[var(--cell)] rounded-[4px]'
 const DAY_LABELS = ['', 'Mon', '', 'Wed', '', 'Fri', '']
 const LEVELS = ['bg-heat-0', 'bg-heat-1', 'bg-heat-2', 'bg-heat-3', 'bg-heat-4']
 const STAT_COLORS = ['text-text', 'text-lime', 'text-pink', 'text-teal']
@@ -51,11 +54,11 @@ function Heatmap({ weeks, months, busiest }) {
   const tooltipBelow = busiest && busiest.day < 2
 
   return (
-    <div ref={scroller} className="sm:overflow-x-auto">
-      <div className="flex w-max gap-2 sm:gap-3">
+    <div ref={scroller} className="[container-type:inline-size] sm:overflow-x-auto">
+      <div className={`flex w-max gap-2 sm:gap-3 ${CELL_SIZE}`}>
         <div aria-hidden className="flex flex-col gap-1 pt-[26px]">
           {DAY_LABELS.map((label, index) => (
-            <span key={index} className="flex h-[18px] w-[30px] items-center font-code text-[11px] leading-[15px] text-muted sm:w-8">
+            <span key={index} className="flex h-[var(--cell)] w-[30px] items-center font-code text-[11px] leading-[15px] text-muted sm:w-8">
               {label}
             </span>
           ))}
@@ -71,7 +74,7 @@ function Heatmap({ weeks, months, busiest }) {
             {months
               .filter((month) => month.week >= firstMobileWeek)
               .map((month) => (
-                <span key={`m-${month.week}-${month.label}`} className={`${MONTH} sm:hidden`} style={{ left: (month.week - firstMobileWeek) * STEP }}>
+                <span key={`m-${month.week}-${month.label}`} className={`${MONTH} sm:hidden`} style={{ left: `calc(${month.week - firstMobileWeek} * (var(--cell) + ${GAP}px))` }}>
                   {month.label}
                 </span>
               ))}
@@ -94,12 +97,12 @@ function Heatmap({ weeks, months, busiest }) {
               >
                 {week.map((day, dayIndex) => {
                   const isBusiest = busiest && busiest.week === weekIndex && busiest.day === dayIndex
-                  if (day.level < 0) return <span key={day.date} className="h-[18px] w-[18px] rounded-[4px] border border-dashed border-line" />
+                  if (day.level < 0) return <span key={day.date} className={`${CELL_BOX} border border-dashed border-line`} />
                   return (
                     <span
                       key={day.date}
                       title={`${plural(day.count, 'commit')} on ${day.date}`}
-                      className={`h-[18px] w-[18px] rounded-[4px] ${LEVELS[day.level]} ${
+                      className={`${CELL_BOX} ${LEVELS[day.level]} ${
                         isBusiest ? 'border-[1.5px] border-text' : ''
                       }`}
                     />

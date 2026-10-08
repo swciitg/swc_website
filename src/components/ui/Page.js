@@ -5,9 +5,9 @@ import Reveal from './Reveal'
 export default function Page({ className = '', children }) {
   return (
     <MotionConfig reducedMotion="user">
-      <div className="bg-void pt-16 lg:pt-20">
+      <main className="bg-void pt-16 lg:pt-20">
         <div className={`mx-auto max-w-[1440px] px-5 sm:px-10 xl:px-16 ${className}`}>{children}</div>
-      </div>
+      </main>
     </MotionConfig>
   )
 }

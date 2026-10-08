@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Reveal from '@/components/ui/Reveal'
 import Button from '@/components/ui/Button'
 import Chip from '@/components/ui/Chip'
@@ -17,6 +18,7 @@ const SCREENS = [
     alt: 'Placement Stats portal showing branch-wise placement charts',
     frame: 'left-[220px] top-[20px] h-[283px] w-[360px] rounded-[16px] border border-line shadow-[0px_24px_40px_0px_rgba(0,0,0,0.45)]',
     image: '',
+    sizes: '(min-width: 640px) 360px, 192px',
     delay: 0.35,
   },
   {
@@ -24,6 +26,7 @@ const SCREENS = [
     alt: 'One Stop app home screen with campus map, timetable and quick links',
     frame: 'left-[6px] top-[200px] h-[400px] w-[196px] rounded-[26px] border-[6px] border-raised shadow-[0px_24px_60px_0px_rgba(0,0,0,0.6)]',
     image: 'object-top',
+    sizes: '(min-width: 640px) 196px, 105px',
     delay: 0.47,
   },
   {
@@ -31,6 +34,7 @@ const SCREENS = [
     alt: 'CollegeCupid app profile screen',
     frame: 'left-[176px] top-[110px] h-[516px] w-[250px] rounded-[30px] border-[6px] border-raised shadow-[0px_24px_60px_0px_rgba(0,0,0,0.6)]',
     image: '',
+    sizes: '(min-width: 640px) 250px, 134px',
     delay: 0.59,
   },
 ]
@@ -45,8 +49,8 @@ const CHIPS = [
 function Screens() {
   return SCREENS.map((screen) => (
     <Reveal key={screen.src} y={28} delay={screen.delay} fade={0.52} move={0.65} className={`absolute overflow-hidden ${screen.frame}`}>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={screen.src} alt={screen.alt} className={`h-full w-full object-cover ${screen.image}`} />
+      {/* Above the fold on every screen size, so these load eagerly. */}
+      <Image src={screen.src} alt={screen.alt} fill priority sizes={screen.sizes} className={`object-cover ${screen.image}`} />
     </Reveal>
   ))
 }

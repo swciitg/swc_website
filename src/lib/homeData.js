@@ -3,6 +3,7 @@
 
 import { fetchGithubActivity } from '@/lib/github';
 import { getRoster } from '@/lib/roster';
+import { toPerson } from '@/lib/people';
 import { PRODUCTS } from '@/data/products';
 import { TRACKS } from '@/data/resources';
 import githubSnapshot from '@/data/github-activity.json';
@@ -10,7 +11,13 @@ import githubSnapshot from '@/data/github-activity.json';
 const GITHUB_TTL_MS = 6 * 60 * 60 * 1000;
 let githubCache = null;
 
-const avatar = ({ name, pfp }) => ({ name, pfp });
+// People with a photo on this site, as { name, photo }.
+const avatars = (records, count) =>
+  records
+    .map(toPerson)
+    .filter((person) => person.photo)
+    .slice(0, count)
+    .map(({ name, photo }) => ({ name, photo }));
 
 async function getGithub() {
   // Unauthenticated GitHub allows 60 requests an hour and next dev re-runs getStaticProps on
@@ -40,8 +47,8 @@ export async function getHomeData() {
       leaders: roster.alumni.length,
     },
     teamSession: roster.session,
-    teamAvatars: team.slice(0, 6).map(avatar),
-    leaderAvatars: roster.alumni.slice(0, 3).map(avatar),
+    teamAvatars: avatars(team, 6),
+    leaderAvatars: avatars(roster.alumni, 3),
     github,
   };
 }

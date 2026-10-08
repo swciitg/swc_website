@@ -1,9 +1,11 @@
+import Image from 'next/image'
 import Reveal from './Reveal'
 
 const SIZES = {
-  sm: { box: 'h-9 w-9', ring: 'border-[2.5px]', overlap: '-ml-[10px]', more: 'text-[12px]' },
+  sm: { box: 'h-9 w-9', pixels: '36px', ring: 'border-[2.5px]', overlap: '-ml-[10px]', more: 'text-[12px]' },
   lg: {
     box: 'h-16 w-16',
+    pixels: '64px',
     ring: 'border-[3px]',
     overlap: '-ml-[14px]',
     more: 'text-[18px]',
@@ -14,6 +16,7 @@ const MORE_COLORS = { teal: 'bg-teal', text: 'bg-text' }
 
 /**
  * Overlapping round portraits followed by a "+N" counter for everyone not shown.
+ * `people` is [{ name, photo }], with `photo` a path in public/ so it can be resized to avatar size.
  * `total` is the size of the whole group; `motion` is { y, start, step } from the motion spec.
  */
 export default function AvatarStack({ people, total, size = 'sm', color = 'teal', motion }) {
@@ -30,14 +33,13 @@ export default function AvatarStack({ people, total, size = 'sm', color = 'teal'
     <div className="flex items-center">
       {people.map((p, index) => (
         <Reveal
-          key={p.pfp}
+          key={p.photo}
           {...reveal(index)}
-          className={`${s.box} ${s.ring} shrink-0 overflow-hidden rounded-full border-surface bg-raised ${
+          className={`relative ${s.box} ${s.ring} shrink-0 overflow-hidden rounded-full border-surface bg-raised ${
             index > 0 ? s.overlap : ''
           }`}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={p.pfp} alt={p.name} loading="lazy" className="h-full w-full object-cover object-top" />
+          <Image src={p.photo} alt={p.name} fill sizes={s.pixels} className="object-cover object-top" />
         </Reveal>
       ))}
       {rest > 0 && (

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { useEffect, useRef } from 'react'
 import Button from '@/components/ui/Button'
 import { Accent } from '@/components/ui/SectionHeader'
 import { DOT_COLORS } from '@/components/ui/Chip'
@@ -54,7 +55,11 @@ function SocialPill({ social }) {
 
 /** Footer C2: dark partner band, tricolor stripes with a teal glow, colour-coded columns, social links, teal bar. */
 export default function SiteFooter() {
-  const year = new Date().getFullYear()
+  // Static pages keep the year they were built in, so the browser writes the current one after load.
+  const year = useRef(null)
+  useEffect(() => {
+    year.current.textContent = new Date().getFullYear()
+  }, [])
 
   return (
     <footer className="overflow-hidden bg-void">
@@ -156,7 +161,9 @@ export default function SiteFooter() {
       </div>
 
       <div className="flex flex-wrap items-center justify-center gap-x-7 gap-y-4 bg-teal sm:gap-x-8 sm:gap-y-2 px-5 py-4 font-code text-[12px] leading-4 text-ink">
-        <p>© {year} Students&apos; Web Committee, IIT Guwahati</p>
+        <p>
+          © <span ref={year} suppressHydrationWarning>{new Date().getFullYear()}</span> Students&apos; Web Committee, IIT Guwahati
+        </p>
         <a href={MAILTO} className="hover:underline">
           {CONTACT.email}
         </a>

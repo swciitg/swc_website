@@ -48,11 +48,18 @@ async function commitActivity(repo, token) {
 async function mapPool(items, size, fn) {
   const results = new Array(items.length);
   let next = 0;
+  let failed = false;
   await Promise.all(
     Array.from({ length: Math.min(size, items.length) }, async () => {
-      while (next < items.length) {
+      // One failure discards the whole result, so the other workers stop taking new items.
+      while (next < items.length && !failed) {
         const index = next++;
-        results[index] = await fn(items[index]);
+        try {
+          results[index] = await fn(items[index]);
+        } catch (error) {
+          failed = true;
+          throw error;
+        }
       }
     })
   );

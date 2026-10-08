@@ -3,7 +3,8 @@ import { CONTACT } from '@/data/site'
 
 /**
  * Email capture for the first post. The site has no mailing-list service, so submitting opens
- * the visitor's mail app with a ready request to the committee, sent from the address they typed.
+ * the visitor's mail app with a ready request to the committee. A mailto link cannot choose the
+ * sender, so the address they typed goes in the message body.
  */
 export default function NotifyForm() {
   const [email, setEmail] = useState('')

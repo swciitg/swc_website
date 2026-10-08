@@ -66,7 +66,7 @@ export const PRODUCTS = [
     platforms: ['web', 'chrome'],
     span: 4,
     links: [
-      { label: 'Chrome Web Store', href: 'https://swc.iitg.ac.in/journeys' },
+      { label: 'Website', href: 'https://swc.iitg.ac.in/journeys' },
       { label: 'GitHub', href: 'https://github.com/swciitg/swc-journeys' },
     ],
   },
