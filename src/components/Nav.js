@@ -152,7 +152,8 @@ export default function Nav() {
             <Link
               href="/#partner"
               onClick={close}
-              className="whitespace-nowrap rounded-full bg-lime px-[14px] py-[9px] font-ui text-[13px] font-semibold leading-4 text-ink lg:hidden"
+              // The open menu has its own "Start a project" button, so the bar shows only the logo and close.
+              className={`whitespace-nowrap rounded-full bg-lime px-[14px] py-[9px] font-ui text-[13px] font-semibold leading-4 text-ink lg:hidden ${open ? 'hidden' : ''}`}
             >
               Work with us
             </Link>
