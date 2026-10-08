@@ -4,78 +4,91 @@
    "id": 1,
    "name": "Ashish More",
    "por": "General Secretary",
+   "degree": "BTech, Energy",
    "pfp": "https://swc.iitg.ac.in/swc/team-26/gs.webp"
   },
   {
    "id": 2,
    "name": "Sowmya",
    "por": "Overall Coordinator",
+   "degree": "BTech, ECE",
    "pfp": "https://swc.iitg.ac.in/swc/team-26/oc.webp"
   },
   {
    "id": 3,
    "name": "Srinjoy Ghosh",
    "por": "Webmaster",
+   "degree": "BTech, CST",
    "pfp": "https://swc.iitg.ac.in/swc/team-26/webm.webp"
   },
   {
    "id": 4,
    "name": "Vijay Kumar",
    "por": "Frontend Lead",
+   "degree": "BTech, EEE",
    "pfp": "https://swc.iitg.ac.in/swc/team-26/fl.webp"
   },
   {
    "id": 5,
    "name": "Vedant Shah",
    "por": "Web Backend Lead",
+   "degree": "BTech, EEE",
    "pfp": "https://swc.iitg.ac.in/swc/team-26/bl.webp"
   },
   {
    "id": 6,
    "name": "Ganesh",
    "por": "App Lead",
+   "degree": "BTech, EP",
    "pfp": "https://swc.iitg.ac.in/swc/team-26/al.webp"
   },
   {
    "id": 7,
    "name": "Ayush Dixit",
    "por": "App Backend Lead",
+   "degree": "BTech, ECE",
    "pfp": "https://swc.iitg.ac.in/swc/team-26/abl.webp"
   },
   {
    "id": 8,
    "name": "Apratul Vasu",
    "por": "Design Lead",
+   "degree": "BDes, Design",
    "pfp": "https://swc.iitg.ac.in/swc/team-26/dl.webp"
   },
   {
    "id": 9,
    "name": "Ayush Bahuguna",
    "por": "Design System Lead",
+   "degree": "BDes, Design",
    "pfp": "/"
   },
   {
    "id": 10,
    "name": "Sneha",
    "por": "Product Lead",
+   "degree": "BTech, EP",
    "pfp": "https://swc.iitg.ac.in/swc/team-26/pl.webp"
   },
   {
    "id": 11,
    "name": "Vibha Gupta",
    "por": "Growth Lead",
+   "degree": "Btech, DSAI",
    "pfp": "https://swc.iitg.ac.in/swc/team-26/gl.webp"
   },
   {
    "id": 12,
    "name": "Rudra Keshri",
    "por": "Events Lead ",
+   "degree": "Btech, Chemical",
    "pfp": "https://swc.iitg.ac.in/swc/team-26/el.webp"
   },
   {
    "id": 13,
    "name": "Manan Vala",
    "por": "Operations Manager ",
+   "degree": "BTech, Mechanical",
    "pfp": "https://swc.iitg.ac.in/swc/team-26/om.webp"
   }
  ],
