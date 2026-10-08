@@ -68,6 +68,22 @@ export const routes = [
       "Learning resources curated by the Students' Web Committee of IIT Guwahati, covering Flutter, HTML, CSS, JavaScript, React, Node.js, Django and more.",
   },
   {
+    path: '/blogs',
+    name: 'Blog',
+    title: "Blog | Students' Web Committee, IIT Guwahati",
+    description:
+      "Posts from the Students' Web Committee of IIT Guwahati about how the team designs, builds and ships its products.",
+    // No posts yet: the page is an announcement, so it stays out of search results until the first one is published.
+    noindex: true,
+  },
+  {
+    path: '/hall-of-fame',
+    name: 'Hall of Fame',
+    title: "Hall of Fame | Students' Web Committee, IIT Guwahati",
+    description:
+      "A tribute to the heads who led the Students' Web Committee of IIT Guwahati, kept batch by batch.",
+  },
+  {
     path: '/about',
     name: 'About',
     title: "About | Students' Web Committee, IIT Guwahati",
