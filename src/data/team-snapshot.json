@@ -1,0 +1,225 @@
+{
+ "heads": [
+  {
+   "id": 1,
+   "name": "Ashish More",
+   "por": "General Secretary",
+   "degree": "BTech, Energy",
+   "pfp": "https://swc.iitg.ac.in/swc/team-26/gs.webp"
+  },
+  {
+   "id": 2,
+   "name": "Sowmya",
+   "por": "Overall Coordinator",
+   "degree": "BTech, ECE",
+   "pfp": "https://swc.iitg.ac.in/swc/team-26/oc.webp"
+  },
+  {
+   "id": 3,
+   "name": "Srinjoy Ghosh",
+   "por": "Webmaster",
+   "degree": "BTech, CST",
+   "pfp": "https://swc.iitg.ac.in/swc/team-26/webm.webp"
+  },
+  {
+   "id": 4,
+   "name": "Vijay Kumar",
+   "por": "Frontend Lead",
+   "degree": "BTech, EEE",
+   "pfp": "https://swc.iitg.ac.in/swc/team-26/fl.webp"
+  },
+  {
+   "id": 5,
+   "name": "Vedant Shah",
+   "por": "Web Backend Lead",
+   "degree": "BTech, EEE",
+   "pfp": "https://swc.iitg.ac.in/swc/team-26/bl.webp"
+  },
+  {
+   "id": 6,
+   "name": "Ganesh",
+   "por": "App Lead",
+   "degree": "BTech, EP",
+   "pfp": "https://swc.iitg.ac.in/swc/team-26/al.webp"
+  },
+  {
+   "id": 7,
+   "name": "Ayush Dixit",
+   "por": "App Backend Lead",
+   "degree": "BTech, ECE",
+   "pfp": "https://swc.iitg.ac.in/swc/team-26/abl.webp"
+  },
+  {
+   "id": 8,
+   "name": "Apratul Vasu",
+   "por": "Design Lead",
+   "degree": "BDes, Design",
+   "pfp": "https://swc.iitg.ac.in/swc/team-26/dl.webp"
+  },
+  {
+   "id": 9,
+   "name": "Ayush Bahuguna",
+   "por": "Design System Lead",
+   "degree": "BDes, Design",
+   "pfp": "/"
+  },
+  {
+   "id": 10,
+   "name": "Sneha",
+   "por": "Product Lead",
+   "degree": "BTech, EP",
+   "pfp": "https://swc.iitg.ac.in/swc/team-26/pl.webp"
+  },
+  {
+   "id": 11,
+   "name": "Vibha Gupta",
+   "por": "Growth Lead",
+   "degree": "Btech, DSAI",
+   "pfp": "https://swc.iitg.ac.in/swc/team-26/gl.webp"
+  },
+  {
+   "id": 12,
+   "name": "Rudra Keshri",
+   "por": "Events Lead ",
+   "degree": "Btech, Chemical",
+   "pfp": "https://swc.iitg.ac.in/swc/team-26/el.webp"
+  },
+  {
+   "id": 13,
+   "name": "Manan Vala",
+   "por": "Operations Manager ",
+   "degree": "BTech, Mechanical",
+   "pfp": "https://swc.iitg.ac.in/swc/team-26/om.webp"
+  }
+ ],
+ "core": [
+  {
+   "id": 1,
+   "name": "Freya",
+   "pfp": "https://swc.iitg.ac.in/swc/team-26/ct-1.webp"
+  },
+  {
+   "id": 2,
+   "name": "Shreesh",
+   "pfp": "https://swc.iitg.ac.in/swc/team-26/ct-2.webp"
+  },
+  {
+   "id": 3,
+   "name": "Asmit",
+   "pfp": "https://swc.iitg.ac.in/swc/team-26/ct-3.webp"
+  },
+  {
+   "id": 4,
+   "name": "Anish",
+   "pfp": "https://swc.iitg.ac.in/swc/team-26/ct-4.webp"
+  },
+  {
+   "id": 5,
+   "name": "Harshith",
+   "pfp": "https://swc.iitg.ac.in/swc/team-26/ct-5.webp"
+  },
+  {
+   "id": 6,
+   "name": "Siddharth",
+   "pfp": "https://swc.iitg.ac.in/swc/team-26/ct-6.webp"
+  },
+  {
+   "id": 7,
+   "name": "Kahaan",
+   "pfp": "https://swc.iitg.ac.in/swc/team-26/ct-7.webp"
+  }
+ ],
+ "hallOfFame": [
+  {
+   "id": 1,
+   "name": "Durgesh Kumar Deo",
+   "role": "General Secretary",
+   "year": "2025-26",
+   "pfp": "https://swc.iitg.ac.in/swc/Images/team_25/durgesh.png"
+  },
+  {
+   "id": 2,
+   "name": "Arushi",
+   "role": "Overall Coordinator",
+   "year": "2025-26",
+   "pfp": "https://swc.iitg.ac.in/swc/Images/team_25/arushi.png"
+  },
+  {
+   "id": 3,
+   "name": "Vineet",
+   "role": "Webmaster",
+   "year": "2025-26",
+   "pfp": "https://swc.iitg.ac.in/swc/Images/team_25/vineet.png"
+  },
+  {
+   "id": 4,
+   "name": "Asmit Verma",
+   "role": "Backend Lead",
+   "year": "2025-26",
+   "pfp": "https://swc.iitg.ac.in/swc/Images/team_25/ashmitl.png"
+  },
+  {
+   "id": 5,
+   "name": "Dishant Kumar",
+   "role": "Backend Lead",
+   "year": "2025-26",
+   "pfp": "https://swc.iitg.ac.in/swc/Images/team_25/dishant_k.png"
+  },
+  {
+   "id": 6,
+   "name": "Heet Patel",
+   "role": "Frontend Lead",
+   "year": "2025-26",
+   "pfp": "https://swc.iitg.ac.in/swc/Images/team_25/heet.png"
+  },
+  {
+   "id": 7,
+   "name": "Venkatesh M.",
+   "role": "App Lead",
+   "year": "2025-26",
+   "pfp": "https://swc.iitg.ac.in/swc/Images/team_25/venky.png"
+  },
+  {
+   "id": 8,
+   "name": "Dhruv Bhasin",
+   "role": "Product Lead",
+   "year": "2025-26",
+   "pfp": "https://swc.iitg.ac.in/swc/Images/team_25/dhruv.png"
+  },
+  {
+   "id": 9,
+   "name": "Aditi Agrawal",
+   "role": "Design Lead",
+   "year": "2025-26",
+   "pfp": "https://swc.iitg.ac.in/swc/Images/team_25/aditi.png"
+  },
+  {
+   "id": 10,
+   "name": "Anushka Mittal",
+   "role": "Design System Lead",
+   "year": "2025-26",
+   "pfp": "https://swc.iitg.ac.in/swc/Images/team_25/anushka.png"
+  },
+  {
+   "id": 11,
+   "name": "Amit Singh",
+   "role": "Growth Lead",
+   "year": "2025-26",
+   "pfp": "https://swc.iitg.ac.in/swc/Images/team_25/amit.png"
+  },
+  {
+   "id": 12,
+   "name": "Shreyansh Srivastava",
+   "role": "Events Lead",
+   "year": "2025-26",
+   "pfp": "https://swc.iitg.ac.in/swc/Images/team_25/shreyansh.png"
+  },
+  {
+   "id": 13,
+   "name": "Ashish More",
+   "role": "Operations Manager",
+   "year": "2025-26",
+   "pfp": "https://swc.iitg.ac.in/swc/Images/team_25/moore.png"
+  }
+ ]
+}

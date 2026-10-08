@@ -1,52 +1,33 @@
+import { useState } from 'react'
 import Seo from '@/components/Seo'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import CardSwcJourney from '../../components/CardSwcJourney'
-import CardElectionPortal from '../../components/CardElectionPortal'
-import CardOneStop from '../../components/CardOneStop'
-import CardPlacementStats from '@/components/CardPlacementStats'
-import CardHmcElections from '@/components/CardHmcElections'
-import CardPlacementPortal from '@/components/CardPlacementPortal'
-import CardSenatePortal from '@/components/CardSenatePortal'
-import CardResumeBuilder from '@/components/CardResumeBuilder'
-import CardWelfareBoard from '@/components/CardWelfareBoard'
-import CardSportsBoard from '@/components/CardSportsBoard'
-const inter = Inter({ subsets: ['latin'] })
+import Page, { PageHeader } from '@/components/ui/Page'
+import { Accent } from '@/components/ui/SectionHeader'
+import FilterPills from '@/components/ui/FilterPills'
+import ProductGrid from '@/components/products/ProductGrid'
+import { PRODUCT_FILTERS, productsFor } from '@/data/products'
 
-export default function Products({ExperienceData}) {
+const FILTERS = PRODUCT_FILTERS.map((filter) => ({ ...filter, count: productsFor(filter.id).length }))
+
+export default function Products() {
+  const [filter, setFilter] = useState('all')
+
   return (
-    <>
-    <Seo path="/products" />
-    {/* this dummy div is for adjusting top position Must be included in every index file-- 3rem for Header and 9rem for Navbar*/}
-    <div className='bg-black h-[12rem] w-full'></div>
-    <div className="flex flex-col h-fit w-[90%] overflow-hidden sm:w-full sm:items-center mx-auto">
-      <div className='text-white font-black bg-black mx-auto text-[3rem] sm:text-[4rem] text-center'>Our Products</div>
-      <hr class="w-48 h-px mx-auto mt-6 mb-10 bg-white border-0 rounded"></hr>
-      {/* Total max width of card container - 68rem or 68*16px */}
-      <div className='flex gap-4 overflow-x-auto justify-start xl:justify-center justify-items-center bg-black'>
-        <CardSwcJourney/>
-        <CardElectionPortal/>
-      </div>
-      <div className='flex flex-row justify-start items-center overflow-auto bg-black sm:mb-4 sm:mt-2'> 
-        <CardOneStop/> 
-      </div>
-      <div className='flex gap-4 overflow-y-hidden justify-start xl:justify-center justify-items-center bg-black h-fit'>
-        <CardPlacementStats/>
-        <CardHmcElections/>
-      </div>
-      <div className='flex flex-row justify-start overflow-auto bg-black mb-4 mt-2'>
-        <CardPlacementPortal/>
-      </div>
-      <div className='flex gap-4 overflow-y-hidden justify-start xl:justify-center justify-items-center bg-black h-fit'>
-        <CardSenatePortal/>
-        <CardResumeBuilder/>
-      </div>
-      <div className='flex gap-4 overflow-y-hidden justify-start xl:justify-center justify-items-center bg-black h-fit'>
-        <CardWelfareBoard/>
-        <CardSportsBoard/>
-      </div>
-    </div>
-      
-    </>
+    <Page className="pb-8">
+      <Seo path="/products" />
+      <PageHeader
+        eyebrow="~/products"
+        title={
+          <>
+            Products we&apos;ve
+            <br />
+            <Accent>shipped.</Accent>
+          </>
+        }
+        lead="Twelve products live across the web, Android, iOS and the Chrome Web Store, built and maintained by students."
+        aside={<FilterPills label="Filter products by platform" options={FILTERS} value={filter} onChange={setFilter} />}
+      />
+      {/* Keyed by filter so a new selection replays the card entrance. */}
+      <ProductGrid key={filter} products={productsFor(filter)} filtered={filter !== 'all'} />
+    </Page>
   )
 }

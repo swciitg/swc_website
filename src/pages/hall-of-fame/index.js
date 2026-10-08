@@ -1,103 +1,79 @@
-import HallOfFameCard from '@/components/HallOfFameCard'
-import axios from 'axios'
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import Head from 'next/head'
+import Seo from '@/components/Seo'
+import Page, { PageHeader } from '@/components/ui/Page'
+import { Accent } from '@/components/ui/SectionHeader'
+import FilterPills from '@/components/ui/FilterPills'
+import PersonCard from '@/components/people/PersonCard'
+import TributeTile from '@/components/hall-of-fame/TributeTile'
+import { getRoster } from '@/lib/roster'
+import { disciplineCounts, sessionLabel, toPerson } from '@/lib/people'
 
-export async function getServerSideProps() {
-  const rawBase = (process.env.BACKEND_BASE_URL || 'http://localhost:8011/swc_website/api').replace(/\/+$/, '');
-  const backend_url = rawBase.endsWith('/api') ? rawBase : `${rawBase}/api`;
-  try {
-    const response = await axios.get(`${backend_url}/hallOfFame`);
-    return { props: { initialData: response.data } };
-  } catch (error) {
-    console.error('Error fetching hall of fame data:', error.message);
-    return { props: { initialData: [] } };
+const COLUMNS = 4
+
+// Read on the server so the leaders are in the HTML, and refreshed hourly without a redeploy.
+export async function getStaticProps() {
+  const { alumni } = await getRoster()
+  const people = alumni.map(toPerson)
+  const years = [...new Set(people.map((person) => person.year))].sort().reverse()
+
+  return {
+    props: {
+      batches: years.map((year) => {
+        const leaders = people.filter((person) => person.year === year)
+        return { year, label: sessionLabel(year), leaders, disciplines: disciplineCounts(leaders) }
+      }),
+    },
+    revalidate: 3600,
   }
 }
 
-export default function HallOfFame({ initialData }) {
-  const data = initialData;
+function BatchSelector({ batches, value, onChange }) {
+  const options = batches.map((batch) => ({ id: batch.year, label: batch.label, count: batch.leaders.length }))
+  return (
+    <div className="flex flex-col items-start gap-[10px] lg:items-end">
+      <p className="font-code text-[11px] uppercase leading-[15px] tracking-[0.08em] text-muted">Batch</p>
+      <FilterPills label="Choose a batch" options={options} value={value} onChange={onChange} />
+    </div>
+  )
+}
 
-  // Extract unique years sorted descending
-  const years = [...new Set(data.map(item => item.year))].sort((a, b) => b.localeCompare(a));
-
-  const [selectedYear, setSelectedYear] = useState(years[0] || null);
-
-  const displayedCards = data.filter(item => item.year === selectedYear);
+export default function HallOfFame({ batches }) {
+  const [year, setYear] = useState(batches[0]?.year)
+  const batch = batches.find((entry) => entry.year === year)
 
   return (
-    <>
-      <Head>
-        <title>Hall of Fame | Students&apos; Web Committee</title>
-        <meta name="description" content="A tribute to the past team leads who built the Students' Web Committee, IIT Guwahati." />
-      </Head>
+    <Page className="pb-8">
+      <Seo path="/hall-of-fame" />
+      <PageHeader
+        eyebrow="~/hall-of-fame"
+        title={
+          <>
+            The leaders who
+            <br />
+            <Accent>built</Accent> SWC.
+          </>
+        }
+        lead="A tribute to the heads who led the committee, kept here batch by batch."
+        aside={batch && <BatchSelector batches={batches} value={year} onChange={setYear} />}
+      />
 
-      {/* dummy div for adjusting top position Must be included in every index file-- 3rem for Header and 9rem for Navbar*/}
-      <div className='bg-black h-[12rem] w-full'></div>
-
-      {/* Hero Section */}
-      <div className='text-white font-black bg-black mx-auto text-[3rem] sm:text-[4rem] text-center'>
-        Hall of Fame
-      </div>
-      <hr className="w-48 h-px mx-auto mt-6 mb-4 bg-white border-0 rounded"></hr>
-      <div className='text-greyuse font-Inter text-center text-sm md:text-base mb-10'>
-        A tribute to the leaders who built SWC.
-      </div>
-
-      {/* Main Content Area */}
-      <div className="flex flex-col justify-center items-center w-[90%] md:w-4/5 h-auto mx-auto mb-10">
-
-        {/* Batch Selector */}
-        {years.length > 0 && (
-          <div className="w-full mb-8">
-            <div className="text-greyuse text-xs tracking-widest text-center mb-4">BATCH</div>
-            <div className="flex flex-row flex-wrap justify-center gap-3">
-              {years.map(year => (
-                <button
-                  key={year}
-                  onClick={() => setSelectedYear(year)}
-                  className={`rounded-full px-5 py-2 text-sm font-Inter transition-colors duration-200 ${
-                    selectedYear === year
-                      ? 'bg-white text-black font-bold'
-                      : 'bg-specialgrey text-greyuse hover:text-white'
-                  }`}
-                >
-                  {year}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Cards Grid with Animation */}
-        <div className="w-full min-h-[50vh]">
-          {years.length === 0 ? (
-            <div className="text-greyuse text-center my-20">No data available yet.</div>
-          ) : (
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={selectedYear}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 20 }}
-                transition={{ duration: 0.3 }}
-                className="flex flex-row flex-wrap justify-center w-full"
-              >
-                {displayedCards.map((item, index) => (
-                  <HallOfFameCard
-                    key={item._id}
-                    pfp={item.pfp}
-                    name={item.name}
-                    role={item.role}
-                    index={index}
-                  />
-                ))}
-              </motion.div>
-            </AnimatePresence>
-          )}
+      {batch ? (
+        // Keyed by batch so choosing another one replays the card entrance.
+        <div key={batch.year} className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:mt-2 lg:grid-cols-4 lg:gap-6">
+          {batch.leaders.map((person, index) => (
+            <PersonCard
+              key={person.id}
+              person={person}
+              variant="alumni"
+              priority={index < COLUMNS}
+              delay={(index < COLUMNS ? 0.4 : 0.1) + (index % COLUMNS) * 0.07}
+            />
+          ))}
+          <TributeTile batch={batch.label} leaders={batch.leaders.length} disciplines={batch.disciplines} delay={0.15} />
         </div>
-      </div>
-    </>
+      ) : (
+        <p className="py-20 font-ui text-[17px] leading-[28px] text-mist">The first batch will be added here soon.</p>
+      )}
+    </Page>
   )
 }

@@ -1,43 +1,32 @@
 import Seo from '@/components/Seo'
-import { Inter} from 'next/font/google'
-import Headline from '../components/Headline'
-import WhoAreWe from '../components/WhoAreWe'
-import SocialTags from '@/components/SocialTags'
-import ExploreBrowseTags from '@/components/ExploreBrowseTags'
-const inter = Inter({ subsets: ['latin'] })
-// import { getHiringCardData } from '../../lib/HiringCardData'
-// import WeAreHiring from '@/components/WeAreHiring'
-import LandingCard1 from '@/components/LandingCard1'
-import LandingCard2 from '@/components/LandingCard2'
-import LandingCard3 from '@/components/LandingCard3'
-import LandingCard4 from '@/components/LandingCard4'
+import Page from '@/components/ui/Page'
+import Hero from '@/components/home/Hero'
+import StatsStrip from '@/components/home/StatsStrip'
+import FeaturedProducts from '@/components/home/FeaturedProducts'
+import ShippingActivity from '@/components/home/ShippingActivity'
+import About from '@/components/home/About'
+import Partner from '@/components/home/Partner'
+import Community from '@/components/home/Community'
+import { getHomeData } from '@/lib/homeData'
 
+// Team, Hall of Fame and GitHub numbers are read on the server and refreshed hourly without a redeploy.
+export async function getStaticProps() {
+  return { props: await getHomeData(), revalidate: 3600 }
+}
 
-
-export default function Home() {
-// console.log(cardData)
+export default function Home({ counts, teamSession, teamAvatars, leaderAvatars, github }) {
   return (
-    <>
+    <Page className="pb-8 sm:pb-16">
       <Seo path="/" />
-      <Headline/>
-      {/* <LandingCard></LandingCard> */}
-       <div className="flex w-full justify-center items-center my-[5%]">
-        <div className="w-full md:w-4/5 lg:w-3/5 flex flex-col md:flex-row justify-center items-center min-h-fit space-y-6 md:space-x-6 md:space-y-0">
-          <div className="flex flex-col justify-center items-center self-center w-full space-y-6">
-            <SocialTags></SocialTags>
-            <LandingCard1></LandingCard1>
-            <LandingCard2></LandingCard2>
-
-          </div>
-          <div className="flex flex-col justify-center items-center self-center w-full space-y-6">
-          <LandingCard3></LandingCard3>
-          <LandingCard4></LandingCard4>
-
-            <ExploreBrowseTags></ExploreBrowseTags>
-          </div>
-        </div>
+      <div className="flex flex-col gap-6 pt-5 sm:pt-6">
+        <Hero />
+        <StatsStrip counts={counts} teamSession={teamSession} teamAvatars={teamAvatars} leaderAvatars={leaderAvatars} />
       </div>
-      <WhoAreWe></WhoAreWe> 
-    </>
+      <FeaturedProducts total={counts.products} />
+      <ShippingActivity activity={github} />
+      <About counts={counts} teamAvatars={teamAvatars} />
+      <Partner />
+      <Community />
+    </Page>
   )
 }

@@ -1,0 +1,14 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="730" height="571" viewBox="0 0 730 571" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Glow">
+<g id="Glow &#226;&#128;&#148; path" filter="url(#filter0_f_0_23)">
+<path d="M50 486H320C326.567 486.001 333.069 484.709 339.136 482.197C345.203 479.685 350.716 476.003 355.36 471.36L436.07 390.64C445.446 381.266 458.162 376 471.42 376H680" stroke="#24C7D6" stroke-opacity="0.6" stroke-width="70"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_0_23" x="0" y="291" width="730" height="280" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_0_23"/>
+</filter>
+</defs>
+</svg>

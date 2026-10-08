@@ -8,8 +8,24 @@ module.exports = {
     extend: {
       fontFamily: {
         Inter: ["Inter", "sans-serif"],
+        ui: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
+        code: ["var(--font-jetbrains)", "ui-monospace", "Menlo", "monospace"],
+        accent: ["var(--font-garamond)", "Georgia", "serif"],
       },
        colors: {
+        // SWC v1 tokens, named after the Figma variables (color/void, color/ink, ...)
+        void: '#04070a',
+        ink: '#071014',
+        surface: '#0b1114',
+        raised: '#121b1f',
+        line: '#1d2a30',
+        muted: '#6e7f86',
+        mist: '#a9b8be',
+        text: '#f2f5f3',
+        lime: { DEFAULT: '#d0ff78' },
+        teal: { DEFAULT: '#3fd3c3' },
+        pink: { DEFAULT: '#ff4a85' },
+        heat: { 0: '#121b1f', 1: '#36452a', 2: '#647c41', 3: '#95b85a', 4: '#d0ff78' },
         custom: '#FEFBFF',
         specialgrey: '#1C1C1C',
         greyuse:  '#777777',
