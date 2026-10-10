@@ -9,16 +9,16 @@ const HeadInfoCard1 = ({ pfp, por, name, degree, phno }) => {
                 <Image src={pfp} height={200} width={200} className="object-cover w-full h-full object-center rounded-xl md:rounded-2xl" unoptimized/>
             </div>
             <div className="flex flex-col ml-[5%] md:ml-[10%] h-inherit justify-between">
-                <span className="flex font-['Inter'] font-bold text-xl md:text-4xl whitespace-nowrap">
+                <span className="flex font-ui font-bold text-xl md:text-4xl whitespace-nowrap">
                     {por}
                 </span>
                 <span className={`flex text-xl md:text-5xl whitespace-nowrap my-2`}>
                     <p className={cedar.className}>{name}</p>
                 </span>
-                <span className="flex font-['Inter'] font-medium text-xl md:text-3xl whitespace-nowrap">
+                <span className="flex font-ui font-medium text-xl md:text-3xl whitespace-nowrap">
                     {degree}
                 </span>
-                <span className="flex font-['Inter'] font-medium text-xl md:text-3xl whitespace-nowrap">
+                <span className="flex font-ui font-medium text-xl md:text-3xl whitespace-nowrap">
                     {phno}
                 </span>
             </div>

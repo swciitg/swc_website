@@ -24,7 +24,7 @@ export default function Navbar() {
       //  Total max width of Navbar from SWC logo to last button - 68rem or 68*16px
       // Below lg (1024px) the pill nav is replaced by a hamburger + dropdown menu since it no longer fits alongside the logo
 
-    <div className="fixed top-[0rem] w-screen h-[9rem] z-50 text-left text-[1.25rem] text-white font-Inter bg-black">
+    <div className="fixed top-[0rem] w-screen h-[9rem] z-50 text-left text-[1.25rem] text-white font-ui bg-black">
       <div className="relative mx-auto mt-[0.5rem] md:mt-[2rem] h-auto flex flex-row justify-between items-center
       w-full px-[1.25rem] sm:px-[2rem] lg:px-0 xl:w-[68rem] lg:w-[48rem]">
 

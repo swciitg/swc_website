@@ -16,7 +16,7 @@ const LandingCard1 = () => {
                         </svg>
                     </div>
                     <div className="flex flex-col justify-center">
-                        <span className="font-['Inter'] text-base text-left font-bold">
+                        <span className="font-ui text-base text-left font-bold">
                             One Stop
                         </span>
                     </div>

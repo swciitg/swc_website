@@ -16,10 +16,10 @@ const LandingCard2 = () => {
                         </svg>
                     </div>
                     <div className="flex flex-col justify-center">
-                        <span className="font-['Inter'] text-base text-left font-bold text-white">
+                        <span className="font-ui text-base text-left font-bold text-white">
                             SA Portal
                         </span>
-                        <span className="font-['Inter'] left-0 font-normal text-sm text-left text-white text-opacity-80">
+                        <span className="font-ui left-0 font-normal text-sm text-left text-white text-opacity-80">
                             Live
                         </span>
                     </div>

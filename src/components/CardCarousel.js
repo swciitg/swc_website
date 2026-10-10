@@ -16,7 +16,7 @@ const CardCarousel = (props) => {
              w-40 sm:h-200 sm:w-200 rounded-lg mx-auto my-auto py-auto sm:object-contain" />
         </div>
         
-        <div className="border-solid shadow-[1px] border-[2px] border-white-600 drop-shadow p-4 mt-0 ext-left rounded-lg sm:h-full sm:w-auto w-full font-['Inter']">
+        <div className="border-solid shadow-[1px] border-[2px] border-white-600 drop-shadow p-4 mt-0 ext-left rounded-lg sm:h-full sm:w-auto w-full font-ui">
              <h3 className="Carousel-title block text-white-900 font-extrabold sm:text-3xl text-xl ">{Title}</h3>
             <h3 className="Carousel-designation block text-white-600 font-semibold sm:text-2xl text-lg  ">{Designation}</h3>
             <p className="Carousel-content block font-normal sm:text-xl text-[1rem] mt-2 text-slate-100 sm:block ">{Content}</p>
