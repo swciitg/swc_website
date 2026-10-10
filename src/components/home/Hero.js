@@ -85,26 +85,11 @@ function CollageMobile() {
   )
 }
 
-// Arrow-shaped tag: teal accent bar on the left, a pointed right end, no status dot.
-function Eyebrow() {
-  return (
-    <span className="inline-flex items-center gap-3 border-l-2 border-teal bg-gradient-to-r from-teal/25 to-teal/10 py-[7px] pl-4 pr-9 font-code text-[12px] uppercase leading-4 tracking-[0.12em] [clip-path:polygon(0_0,calc(100%_-_14px)_0,100%_50%,calc(100%_-_14px)_100%,0_100%)]">
-      <span className="text-text">Students&apos; Web Committee</span>
-      <span aria-hidden className="h-3 w-px bg-teal/60" />
-      <span className="text-teal">IIT Guwahati</span>
-    </span>
-  )
-}
-
 export default function Hero() {
   return (
     <div className="relative overflow-hidden rounded-[32px] bg-[#010304]">
       <div className="flex flex-col gap-6 px-5 pb-6 pt-8 sm:gap-10 sm:px-10 sm:pb-0 sm:pt-10 lg:min-h-[720px] lg:flex-row lg:items-center lg:justify-between lg:gap-0 lg:py-10 lg:pl-12 lg:pr-6 xl:pl-16 xl:pr-10">
         <div className="relative z-10 flex flex-col items-start gap-7 sm:gap-8 lg:w-[52%] xl:w-[620px]">
-          <Reveal y={10} delay={0.1} fade={0.32} move={0.4} className="max-sm:hidden">
-            <Eyebrow />
-          </Reveal>
-
           <h1 className="flex flex-col items-start">
             {HEADLINE.map((line) => (
               <Reveal key={line.text} x={-28} delay={line.delay} fade={0.4} move={0.55} className={`flex ${line.offset}`}>
