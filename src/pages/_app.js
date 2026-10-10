@@ -13,6 +13,13 @@ const garamond = EB_Garamond({ subsets: ['latin'], weight: ['400'], style: ['ita
 const SiteFooter = dynamic(() => import('@/components/SiteFooter'))
 const loadMotion = () => import('@/lib/motionFeatures').then((module) => module.default)
 
+// Agentation is a dev-only annotation toolbar. It is a devDependency, so the production image
+// (npm ci --production) does not have it: the constant condition lets the build drop this import.
+const Agentation =
+  process.env.NODE_ENV === 'development'
+    ? dynamic(() => import('agentation').then((module) => module.Agentation), { ssr: false })
+    : () => null
+
 export default function App({ Component, pageProps }) {
   return (
     <LazyMotion features={loadMotion}>
@@ -20,6 +27,7 @@ export default function App({ Component, pageProps }) {
         <Nav />
         <Component {...pageProps} />
         <SiteFooter />
+        <Agentation />
       </div>
     </LazyMotion>
   )
