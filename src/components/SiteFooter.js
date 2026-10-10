@@ -164,10 +164,10 @@ export default function SiteFooter() {
         <p>
           © <span ref={year} suppressHydrationWarning>{new Date().getFullYear()}</span> Students&apos; Web Committee, IIT Guwahati
         </p>
-        <a href={MAILTO} className="hover:underline">
+        <a href={MAILTO} className="hover:underline max-sm:hidden">
           {CONTACT.email}
         </a>
-        <button type="button" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:underline">
+        <button type="button" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:underline max-sm:hidden">
           Back to top ↑
         </button>
       </div>

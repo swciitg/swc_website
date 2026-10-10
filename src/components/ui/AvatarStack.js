@@ -4,11 +4,11 @@ import Reveal from './Reveal'
 const SIZES = {
   sm: { box: 'h-9 w-9', pixels: '36px', ring: 'border-[2.5px]', overlap: '-ml-[10px]', more: 'text-[12px]' },
   lg: {
-    box: 'h-16 w-16',
+    box: 'h-14 w-14 sm:h-16 sm:w-16',
     pixels: '64px',
     ring: 'border-[3px]',
-    overlap: '-ml-[14px]',
-    more: 'text-[18px]',
+    overlap: '-ml-[12px] sm:-ml-[14px]',
+    more: 'text-[16px] sm:text-[18px]',
   },
 }
 

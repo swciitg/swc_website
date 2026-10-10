@@ -29,8 +29,8 @@ function HeaderStats({ stats }) {
 function Visual({ prompt, color, glow, glowClass, children }) {
   return (
     <div className="relative h-[216px] overflow-hidden rounded-[16.6px] border border-line bg-surface sm:h-[260px] sm:rounded-[20px]">
-      {/* The artwork is drawn on a 421×260 canvas; phones show that canvas scaled down as one piece. */}
-      <div className="absolute left-1/2 top-0 h-[260px] w-[421px] origin-top -translate-x-1/2 scale-[0.8313] sm:inset-0 sm:h-auto sm:w-auto sm:translate-x-0 sm:scale-100">
+      {/* The artwork is drawn on a 421×260 canvas; phones show that canvas scaled down as one piece, inset so it has room around it. */}
+      <div className="absolute left-1/2 top-[14px] h-[260px] w-[421px] origin-top -translate-x-1/2 scale-[0.72] sm:inset-0 sm:h-auto sm:w-auto sm:translate-x-0 sm:scale-100">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={glow} alt="" aria-hidden className={`pointer-events-none absolute left-1/2 max-w-none -translate-x-1/2 ${glowClass}`} />
         <p className={`absolute left-[23px] top-[21px] whitespace-nowrap font-code text-[12px] leading-4 ${TEXT_COLORS[color]}`}>{prompt}</p>
@@ -172,7 +172,7 @@ function Principle({ index, color, title, children }) {
 
 export default function About({ counts, teamAvatars }) {
   const stats = [
-    { value: counts.team, label: 'Members', color: 'teal' },
+    { value: '100+', label: 'Members', color: 'teal' }, // shown as a milestone, not the live roster count
     { value: counts.tracks, label: 'Learning tracks', color: 'pink' },
     { value: counts.products, label: 'Products shipped', color: 'lime' },
   ]
