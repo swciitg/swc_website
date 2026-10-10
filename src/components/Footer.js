@@ -15,7 +15,7 @@ const Footer = () => {
                         </div>
                         <div className="flex flex-col pr-4"> 
                             <div className="flex text-greyuse"> <a href='mailto:swc@iitg.ac.in'> swc@iitg.ac.in </a></div>
-                            <div className="flex text-greyuse">+91 6264241367</div>
+                            <div className="flex text-greyuse">+91 89563 36360</div>
                         </div>
                     </div>
                 </div>
