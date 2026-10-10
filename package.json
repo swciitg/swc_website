@@ -16,6 +16,7 @@
     "framer-motion": "^10.10.0",
     "fs": "^0.0.1-security",
     "fs.promises": "^0.1.2",
+    "geist": "^1.7.2",
     "next": "^13.5.4",
     "path": "^0.12.7",
     "rainbowvis.js": "^1.1.1",
