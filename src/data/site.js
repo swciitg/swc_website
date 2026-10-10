@@ -1,6 +1,6 @@
 export const CONTACT = {
   email: 'swc@iitg.ac.in',
-  phone: '+91 6264241367',
+  phone: '+91 89563 36360',
   address: ['SWC, New SAC', 'IIT Guwahati, 781039'],
 };
 
