@@ -26,11 +26,11 @@ function HeaderStats({ stats }) {
 }
 
 /** Card that pictures a principle: a terminal prompt in the corner and a glow behind the artwork. */
-function Visual({ prompt, color, glow, glowClass, children }) {
+function Visual({ prompt, color, glow, glowClass, mobileHeight = 'h-[216px]', children }) {
   return (
-    <div className="relative h-[216px] overflow-hidden rounded-[16.6px] border border-line bg-surface sm:h-[260px] sm:rounded-[20px]">
+    <div className={`relative ${mobileHeight} overflow-hidden rounded-[16.6px] border border-line bg-surface sm:h-[260px] sm:rounded-[20px]`}>
       {/* The artwork is drawn on a 421×260 canvas; phones show that canvas scaled down as one piece, inset so it has room around it. */}
-      <div className="absolute left-1/2 top-[14px] h-[260px] w-[421px] origin-top -translate-x-1/2 scale-[0.72] sm:inset-0 sm:h-auto sm:w-auto sm:translate-x-0 sm:scale-100">
+      <div className="absolute left-1/2 top-[8px] h-[260px] w-[421px] origin-top -translate-x-1/2 scale-[0.72] sm:inset-0 sm:h-auto sm:w-auto sm:translate-x-0 sm:scale-100">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={glow} alt="" aria-hidden className={`pointer-events-none absolute left-1/2 max-w-none -translate-x-1/2 ${glowClass}`} />
         <p className={`absolute left-[23px] top-[21px] whitespace-nowrap font-code text-[12px] leading-4 ${TEXT_COLORS[color]}`}>{prompt}</p>
@@ -42,7 +42,7 @@ function Visual({ prompt, color, glow, glowClass, children }) {
 
 function SquadVisual({ people, total }) {
   return (
-    <Visual prompt="$ swc team --list" color="teal" glow="/swc/v1/about/glow-squad.svg" glowClass="top-[29px] h-[340px] w-[440px]">
+    <Visual prompt="$ swc team --list" color="teal" mobileHeight="h-[192px]" glow="/swc/v1/about/glow-squad.svg" glowClass="top-[29px] h-[340px] w-[440px]">
       <div className="absolute inset-x-0 top-[83px] flex justify-center">
         <AvatarStack
           people={people}
@@ -82,7 +82,7 @@ function BranchesVisual() {
   })
 
   return (
-    <Visual prompt="$ git log --graph" color="pink" glow="/swc/v1/about/glow-branches.svg" glowClass="ml-[78px] top-[39px] h-[330px] w-[420px]">
+    <Visual prompt="$ git log --graph" color="pink" mobileHeight="h-[202px]" glow="/swc/v1/about/glow-branches.svg" glowClass="ml-[78px] top-[39px] h-[330px] w-[420px]">
       <svg
         role="img"
         aria-label="Product, design, engineering, data and management branches merging into main"
@@ -138,7 +138,7 @@ function ProductsVisual({ total }) {
   })
 
   return (
-    <Visual prompt="$ ls ./products" color="lime" glow="/swc/v1/about/glow-products.svg" glowClass="ml-[8px] top-[29px] h-[330px] w-[440px]">
+    <Visual prompt="$ ls ./products" color="lime" mobileHeight="h-[206px]" glow="/swc/v1/about/glow-products.svg" glowClass="ml-[8px] top-[29px] h-[330px] w-[440px]">
       <Chip dot="lime" tone="mist" className="absolute right-[19px] top-[15px]">
         {total} shipped
       </Chip>
