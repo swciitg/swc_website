@@ -41,14 +41,14 @@ function Capability({ capability, index }) {
       delay={0.35 + index * 0.08}
       fade={0.44}
       move={0.55}
-      className="flex flex-col items-start rounded-[24px] border border-line bg-surface px-5 py-6 transition-colors duration-300 hover:border-muted sm:h-[260px] sm:justify-between sm:py-7 sm:pl-7 sm:pr-6"
+      className="flex flex-col items-start gap-6 rounded-[24px] border border-line bg-surface px-5 py-6 transition-colors duration-300 hover:border-muted sm:h-[260px] sm:justify-between sm:gap-0 sm:py-7 sm:pl-7 sm:pr-6"
     >
-      <div className="flex flex-col items-start gap-4 sm:gap-[14px]">
+      <div className="flex flex-col items-start gap-3 sm:gap-[14px]">
         <span aria-hidden className={`h-1 w-8 rounded-[2px] ${accent.bar}`} />
-        <p className={`whitespace-nowrap font-code text-[13px] leading-[17px] ${accent.text}`}>$ swc build --scope={capability.scope}</p>
+        <p className={`whitespace-nowrap font-code text-[12px] leading-[16px] sm:text-[13px] sm:leading-[17px] ${accent.text}`}>$ swc build --scope={capability.scope}</p>
       </div>
-      <div className="flex flex-col gap-[10px]">
-        <h3 className="font-ui text-[24px] font-semibold leading-[27px] tracking-[-0.03em] text-text sm:text-[28px] sm:leading-8">
+      <div className="flex flex-col gap-2 sm:gap-[10px]">
+        <h3 className="font-ui text-[26px] font-semibold leading-[30px] tracking-[-0.03em] text-text sm:text-[28px] sm:leading-8">
           {capability.title[0]} <br className="max-sm:hidden" />
           {capability.title[1]}
         </h3>

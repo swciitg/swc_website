@@ -146,7 +146,7 @@ export default function SiteFooter() {
               Web Committee
             </p>
           </div>
-          <p className="mt-6 max-w-[380px] font-ui text-[16px] leading-[25px] text-mist max-sm:text-center sm:mt-8 xl:mt-14 xl:text-right">
+          <p className="mt-6 max-w-[460px] font-ui text-[16px] leading-[25px] text-mist max-sm:text-center sm:mt-8 xl:mt-14 xl:text-right">
             The student tech team behind IIT Guwahati&apos;s web and apps. Twelve products shipped, built by students.
           </p>
           <div className="mt-3 flex flex-col items-center gap-3 max-sm:w-full sm:mt-6 sm:items-start sm:gap-[10px] xl:items-end">
@@ -164,10 +164,10 @@ export default function SiteFooter() {
         <p>
           © <span ref={year} suppressHydrationWarning>{new Date().getFullYear()}</span> Students&apos; Web Committee, IIT Guwahati
         </p>
-        <a href={MAILTO} className="hover:underline">
+        <a href={MAILTO} className="hover:underline max-sm:hidden">
           {CONTACT.email}
         </a>
-        <button type="button" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:underline">
+        <button type="button" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hover:underline max-sm:hidden">
           Back to top ↑
         </button>
       </div>

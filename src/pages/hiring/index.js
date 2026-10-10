@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import { Inter} from 'next/font/google'
-const inter = Inter({ subsets: ['latin'] })
 import { getHiringCardData } from '../../../lib/HiringCardData'
 import WeAreHiring from '@/components/WeAreHiring'
 import { getExperienceData } from '../../../lib/ExperienceData'

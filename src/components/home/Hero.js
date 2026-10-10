@@ -90,10 +90,6 @@ export default function Hero() {
     <div className="relative overflow-hidden rounded-[32px] bg-[#010304]">
       <div className="flex flex-col gap-6 px-5 pb-6 pt-8 sm:gap-10 sm:px-10 sm:pb-0 sm:pt-10 lg:min-h-[720px] lg:flex-row lg:items-center lg:justify-between lg:gap-0 lg:py-10 lg:pl-12 lg:pr-6 xl:pl-16 xl:pr-10">
         <div className="relative z-10 flex flex-col items-start gap-7 sm:gap-8 lg:w-[52%] xl:w-[620px]">
-          <Reveal y={10} delay={0.1} fade={0.32} move={0.4} className="max-sm:hidden">
-            <Chip dot="lime">Students&apos; Web Committee · IIT Guwahati</Chip>
-          </Reveal>
-
           <h1 className="flex flex-col items-start">
             {HEADLINE.map((line) => (
               <Reveal key={line.text} x={-28} delay={line.delay} fade={0.4} move={0.55} className={`flex ${line.offset}`}>

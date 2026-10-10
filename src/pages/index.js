@@ -3,7 +3,7 @@ import Page from '@/components/ui/Page'
 import Hero from '@/components/home/Hero'
 import StatsStrip from '@/components/home/StatsStrip'
 import FeaturedProducts from '@/components/home/FeaturedProducts'
-import ShippingActivity from '@/components/home/ShippingActivity'
+// import ShippingActivity from '@/components/home/ShippingActivity' // hidden from the home page for now
 import About from '@/components/home/About'
 import Partner from '@/components/home/Partner'
 import Community from '@/components/home/Community'
@@ -23,7 +23,7 @@ export default function Home({ counts, teamSession, teamAvatars, leaderAvatars, 
         <StatsStrip counts={counts} teamSession={teamSession} teamAvatars={teamAvatars} leaderAvatars={leaderAvatars} />
       </div>
       <FeaturedProducts total={counts.products} />
-      <ShippingActivity activity={github} />
+      {/* <ShippingActivity activity={github} /> */}
       <About counts={counts} teamAvatars={teamAvatars} />
       <Partner />
       <Community />

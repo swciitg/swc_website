@@ -6,7 +6,7 @@ const CoreTeamCard3 = ({pfp, name}) => {
             <div className="flex h-40 md:h-72 justify-center items-end overflow-hidden rounded-xl md:rounded-2xl bg-gradient-to-b from-teambg3">
                 <Image src={pfp} height={200}  width={200} className="object-cover w-full h-full object-center rounded-xl md:rounded-2xl" unoptimized/>
             </div>
-            <span className="flex absolute bottom-0 h-fit md:h-[15%] bg-white bg-opacity-40 w-full justify-center items-center text-black text-xl font-['Inter'] font-bold text-center">
+            <span className="flex absolute bottom-0 h-fit md:h-[15%] bg-white bg-opacity-40 w-full justify-center items-center text-black text-xl font-ui font-bold text-center">
                 {name}
             </span>
         </div>
